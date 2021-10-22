@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
+
+body {
+  min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+  color: #342b2b;
+}
+
+.navbar-brand {
+  font-family: "Rubik", sans-serif;
+}
+
+.logo > img {
+  width: 2rem;
+  margin-right: 15px;
+}
+
+.nav-item {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* Content */
+.text-content {
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.headline {
+  margin-bottom: 10px;
+}
+
+.header .headline {
+  font-size: 36px;
+}
+
+.decs {
+  font-size: 14px;
+  margin-left: 2px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #5a8653;
+  border-color: #5a8653;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #496b44 !important;
+  border-color: #5a8653;
+  box-shadow: none !important;
+}
+
+/* Jumbotron */
+.header {
+  background-color: #b4caeb38;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.header img {
+  display: block;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  object-position: 65% 20%;
+  margin-top: 30px;
+}
+
+.header .text-content {
+  margin-top: 30px;
+  padding-right: 70px;
+}
+
+/* About Us */
+#about {
+  margin: 120px 0px;
+}
+
+#img-about > img {
+  border-radius: 10px;
+}
+
+/* Card */
+#benefit .icon {
+  padding: 0px 70px;
+}
+
+.icon > img {
+  width: 65px;
+}
+
+.icon > h5 {
+  font-size: 22px;
+}
+
+/* Carousel */
+#gallery {
+  margin: 120px 0px;
+}
+.carousel-item > img {
+  display: block;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+/* Coming Soon */
+#cs {
+  margin: 100px 0px 100px;
+}
+#cs .card {
+  border-radius: 5px;
+}
+#cs .card-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+#cs .card-text {
+  margin-top: -5px;
+  font-size: 13px;
+  margin: -5px 0px 10px;
+}
+#cs .col-1 > img {
+  width: 18px;
+}
+.schedule {
+  margin-bottom: -10px;
+}
+.schedule small {
+  font-size: 12px;
+  margin-left: -15px;
+}
+#cs a {
+  text-decoration: none;
+  margin-left: 125px;
+  color: black;
+  font-size: 15px;
+}
+/* Footer */
+.footer {
+  margin-top: 50px;
+  background-color: #5a8653;
+}
+
+.footer a {
+  color: black;
+}
+
+.icons > img {
+  width: 8%;
+  margin: 3px 12px 0px;
+}
+
+.copyright p {
+  font-size: 12px;
+  margin: 5px 0px;
+  font-weight: 500;
+}
