@@ -37,6 +37,14 @@ nav {
   padding: 10px 25px;
 }
 
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #496b44 !important;
+  border-color: #5a8653;
+  box-shadow: none !important;
+}
+
 .btnCancel {
   background-color: #7a7a7a;
   border-color: #7a7a7a;
@@ -53,13 +61,7 @@ nav {
   box-shadow: none !important;
 }
 
-.btn:hover,
-.btn:active,
-.btn:focus {
-  background-color: #496b44 !important;
-  border-color: #5a8653;
-  box-shadow: none !important;
-}
+
 
 
 /* Thumbnail */
@@ -68,23 +70,20 @@ nav {
   border-radius: 5%;
 }
 
-/* Info Card */
-/* .card-header > h5 {
-  color: whitesmoke;
+/* Detail Card */
+.joinCard {
+  box-shadow: 15px;
 }
-.card-header > h7 {
-  color: whitesmoke;
-} */
-
 .title {
-  background-color: #b3d8ad;
+  background-color: #5a8653;
   border-radius: 10px 10px 0px 0px;
+  color: white;
 }
 .title > h6 {
   margin: 0 !important;
 }
 .body {
-  background-color: #ece9d9;
+  background-color: #f3efdd;
   border-radius: 0px 0px 10px 10px;
 }
 .joinTime {

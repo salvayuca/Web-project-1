@@ -52,13 +52,13 @@
     </div>
   </nav>
 
-  <section class="container mt-5">
+  <section class="container mt-0">
     <div class="row py-5">
       <div class="col-8">
-          <img src="https://img.freepik.com/free-vector/nature-scene-with-river-hills-forest-mountain-landscape-flat-cartoon-style-illustration_1150-37326.jpg?size=626&ext=jpg" class="w-100 rounded float-start" alt="img">
+          <img src="https://img.freepik.com/free-vector/nature-scene-with-river-hills-forest-mountain-landscape-flat-cartoon-style-illustration_1150-37326.jpg?size=626&ext=jpg" class="image w-100 float-start" alt="img">
       </div>
-    
-      <div class="col-4 align-item-center">
+  
+      <div class="col-4">
           <div class="card">
             <div class="card-header mb-0"><h5 class="text-tittle text-center">Login</h5>
             </div>
@@ -70,14 +70,14 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="text-content form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="password" class="form-control" id="Password">
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="text-content form-check-label" for="exampleCheck1">Remember me</label>
                 </div>
                 <div class="text-center">
-                <button type="submit" class="btn btn-primary text-content">Submit</button>
+                <button id="btn-submit" type="submit" class="btn btn-primary text-content">Submit</button>
                 </div>
               </form>
             </div>
@@ -87,6 +87,31 @@
     </div>
   </section>
 
+  <script>
+    const inputUsername = document.querySelector("#Username");
+    const inputPassword = document.querySelector("#Password")
+    const btnSubmit = document.querySelector("#btn-submit")
+
+    const usernamePattern = new RegExp("^[^0-9][^/_!@#$%^&*.]{5,}");
+    const passPattern = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[/!@#$%^&*.])(?=.{8,})")
+
+    btnSubmit.addEventListener("click", function (a) {
+      a.preventDefault()
+      if (usernamePattern.test(inputUsername.value)) {
+        if (passPattern.test(inputPassword.value)) {
+          window.location.href="#"
+          inputPassword.value = ""
+        } else {
+          alert(`tolong masukan password sesuai ketentuan`)
+          inputPassword.value = ""
+        }
+      } else {
+        alert(`tolong masukan username yang valid`)
+        inputPassword.value = ""
+      }
+    })
+  </script>
+      
   <!-- JS Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
