@@ -6,17 +6,17 @@ body {
   background-color: rgb(233, 235, 218);
 }
 
-/* Navbar */
-.navbar {
-  background-color: rgb(117, 167, 117);
+/* Font Type */
+.text-content {
+  font-family: "Nunito", sans-serif;
+}
+.text-tittle {
+  font-family: "Rubik", sans-serif;
 }
 
+/* Navbar */
 nav {
   color: #342b2b;
-}
-
-.navbar-brand {
-  font-family: "Rubik", sans-serif;
 }
 
 .logo > img {
@@ -29,6 +29,39 @@ nav {
   margin-left: 20px;
 }
 
+/* Button */
+.btn {
+  background-color: #5a8653;
+  border-color: #5a8653;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+.btnCancel {
+  background-color: #7a7a7a;
+  border-color: #7a7a7a;
+  border-radius: 10px;
+  padding: 10px 25px;
+  box-shadow: none !important;
+}
+
+.btnCancel:hover,
+.btnCancel:active,
+.btnCancel:focus {
+  background-color: #414141 !important;
+  border-color: #7a7a7a;
+  box-shadow: none !important;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #496b44 !important;
+  border-color: #5a8653;
+  box-shadow: none !important;
+}
+
+
 /* Thumbnail */
 .image {
   height: 350px;
@@ -39,8 +72,8 @@ nav {
 .category {
   border-radius: 5%;
 }
-.joinCard {
-  font-family: "Nunito", sans-serif;
+h5.joinCard {
+  color: white;
 }
 .card-header {
   background-color: #5a8653;
