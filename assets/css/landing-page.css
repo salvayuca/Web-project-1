@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 
 body {
   min-height: 100vh;
@@ -7,40 +7,51 @@ body {
 }
 
 /* Navbar */
-nav {
+.navbar {
   color: #342b2b !important;
   font-family: "Rubik", sans-serif;
+  padding: 10px 0px;
 }
 
 .navbar-brand {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .logo > img {
   width: 2rem;
   margin-right: 15px;
 }
-
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 500;
+}
 .nav-item {
   margin-right: 20px;
   margin-left: 20px;
+  position: relative;
 }
 
-.nav-item > a {
-  font-size: 16px;
-  font-weight: 500;
+.nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: #56854e;
+  transition: width 0.3s ease-out;
 }
 
-.navbar-login {
-  border-radius: 3px;
-  text-align: center;
-  padding: 2px 10px 4px;
-  font-size: 15px;
+.nav-item:hover.nav-item::after {
+  width: 100%;
 }
 
 /* Jumbotron */
 .jumbotron {
-  padding-top: 50px !important;
+  padding-top: 55px !important;
 }
 .header {
   background-color: #ebf1fa;
@@ -54,6 +65,9 @@ nav {
   font-family: "Nunito", sans-serif;
   margin-bottom: 5px;
 }
+#headline span {
+  font-weight: 900;
+}
 .header #title {
   font-size: 18px;
   margin-bottom: 2px;
@@ -66,7 +80,10 @@ nav {
   padding: 18px 18px 0px;
   box-shadow: 10px 17px 18px 1px rgb(197, 202, 204);
   transform: rotate(-5deg);
-  width: 35%;
+  width: 350px;
+}
+.pic-left {
+  display: none;
 }
 .polaroid img {
   display: block;
@@ -107,6 +124,7 @@ nav {
   font-size: 18px;
   letter-spacing: 3px;
   font-weight: 500;
+  font-family: "Rubik", sans-serif;
 }
 
 .btn-success:hover,
@@ -115,7 +133,25 @@ nav {
   background-color: #3b5c35 !important;
   box-shadow: none !important;
 }
+
+/* Card */
+#benefit {
+  margin-top: -140px;
+}
+#benefit .icon {
+  padding: 30px 70px;
+}
+.icon > img {
+  width: 30%;
+}
+.icon > h5 {
+  font-size: 22px;
+}
+
 /* About Us */
+#about {
+  margin-top: -60px;
+}
 #about .text-content {
   padding-right: 100px;
 }
@@ -127,23 +163,10 @@ nav {
   box-shadow: 10px 17px 18px 1px rgb(197, 202, 204);
 }
 
-/* Card */
-#benefit {
-  padding-top: 100px;
-}
-#benefit .icon {
-  padding: 30px 70px;
-}
-
-.icon > img {
-  width: 65px;
-}
-
-.icon > h5 {
-  font-size: 22px;
-}
-
 /* Carousel */
+#gallery {
+  margin: -20px 0px 30px;
+}
 .carousel-item > img {
   display: block;
   width: 100%;
@@ -154,7 +177,7 @@ nav {
 
 /* Coming Soon */
 #cs {
-  margin: 0px 0px 100px;
+  margin: -70px 0px 0px;
 }
 #cs .card {
   border-radius: 5px;
@@ -168,31 +191,37 @@ nav {
   font-size: 13px;
   margin: -5px 0px 10px;
 }
-#cs .col-1 > img {
+.time {
+  margin-bottom: 10px;
+}
+#cs .time > img {
   width: 18px;
 }
-.schedule {
-  margin-bottom: -10px;
-}
-.schedule small {
+.time small {
   font-size: 12px;
-  margin-left: -15px;
+}
+#cs span img {
+  margin-top: -2px;
+  width: 18px;
+  margin-left: 5px;
 }
 #cs a {
   text-decoration: none;
-  margin-left: 125px;
-  color: black;
+  color: #342b2b;
   font-size: 15px;
 }
 
 /* Section */
 section {
-  padding-top: 5rem;
+  padding-top: 12rem;
 }
 
 /* Footer */
+.last {
+  padding: 0px;
+}
 .footer {
-  margin-top: 50px;
+  margin-top: -100px;
   background-color: #5a8653;
   color: #241c1c !important;
   font-family: "Rubik", sans-serif;
@@ -211,8 +240,140 @@ section {
   margin: 3px 12px 0px;
 }
 
-.copyright p {
+.footer p {
   font-size: 12px;
-  margin: 5px 0px;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  /* navbar */
+  .text-content {
+    text-align: center;
+  }
+  .navbar-login {
+    margin-top: 100px;
+    margin-left: 20px;
+    width: 100px;
+  }
+
+  /* Jumbotron */
+  .jumbotron {
+    padding-top: 45px !important;
+  }
+  .header .text-content {
+    margin-top: 50px;
+  }
+  .header #headline {
+    font-size: 31px;
+  }
+  .header #decs {
+    margin-bottom: 5px;
+  }
+  .polaroid {
+    padding: 12px 12px 0px;
+    box-shadow: 8px 15px 12px -3px rgb(197, 202, 204);
+    width: 70%;
+  }
+  .pic-left {
+    display: block;
+  }
+  .pic-right {
+    display: none;
+  }
+  .polaroid img {
+    height: 30vh;
+    border-radius: 3px;
+  }
+  .polaroid p {
+    font-size: 16px;
+  }
+
+  /* Content */
+  .third {
+    margin-bottom: 40px;
+  }
+
+  /* Card */
+  #benefit {
+    margin-top: -50px;
+  }
+  #benefit .icon {
+    padding: 10px 50px;
+  }
+  .icon > img {
+    width: 20%;
+    margin-bottom: 15px !important;
+  }
+  .icon > h5 {
+    font-size: 20px;
+    margin-bottom: 7px !important;
+  }
+  .icon > p {
+    font-size: 14px;
+  }
+  /* About */
+  #about {
+    margin-top: 10px;
+  }
+  #img-about {
+    margin-bottom: 30px;
+  }
+  #img-about > img {
+    border-radius: 5px;
+    height: 40vh;
+    width: 80%;
+    object-fit: cover;
+    object-position: 80%;
+    box-shadow: 10px 17px 18px 1px rgb(197, 202, 204);
+  }
+  #about .text-content {
+    padding-right: 0px;
+  }
+  #about .third {
+    margin-bottom: 25px;
+  }
+  /* Gallery */
+  #gallery {
+    margin-top: 30px;
+  }
+  .carousel-item > img {
+    height: 38vh;
+  }
+
+  /* CS */
+  #cs {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  #cs .card {
+    margin: 0px 0px 40px;
+    width: 100%;
+  }
+  #cs .link {
+    align-items: center;
+  }
+
+  /* Section */
+  section {
+    padding-top: 80px;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: -1px;
+  }
+  .footer .logo {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .footer #about-us {
+    text-align: center;
+  }
+
+  .icons > img {
+    width: 25px;
+    margin: 3px 12px 0px;
+  }
 }
