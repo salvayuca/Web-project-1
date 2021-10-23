@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
+
+body {
+  min-height: 100vh;
+  background-color: #f7f6f2;
+}
+
+
+/* Font Type */
+.text-content {
+  font-family: "Nunito", sans-serif;
+}
+.text-tittle {
+  font-family: "Rubik", sans-serif;
+}
+
+/* Navbar */
+nav {
+  color: #342b2b;
+}
+
+.logo > img {
+  width: 2rem;
+  margin-right: 15px;
+}
+
+.nav-item {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* Button */
+.btn {
+  background-color: #5a8653;
+  border-color: #5a8653;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #496b44 !important;
+  border-color: #5a8653;
+  box-shadow: none !important;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.image {
+  border-radius: 15px;
+  height: 80%;
+ }
