@@ -3,7 +3,7 @@
 
 body {
   min-height: 100vh;
-  background-color: rgb(233, 235, 218);
+  background-color: #f7f6f2;
 }
 
 /* Font Type */
@@ -69,18 +69,37 @@ nav {
 }
 
 /* Info Card */
-.category {
-  border-radius: 5%;
+/* .card-header > h5 {
+  color: whitesmoke;
 }
-h5.joinCard {
-  color: white;
+.card-header > h7 {
+  color: whitesmoke;
+} */
+
+.title {
+  background-color: #b3d8ad;
+  border-radius: 10px 10px 0px 0px;
 }
-.card-header {
-  background-color: #5a8653;
+.title > h6 {
+  margin: 0 !important;
 }
-.card-body {
-  background-color: rgb(153, 190, 153);
+.body {
+  background-color: #ece9d9;
+  border-radius: 0px 0px 10px 10px;
 }
+.joinTime {
+  margin: 5px;
+}
+.lokasi > img {
+  width: 20px;
+  margin-right: 5px;
+}
+.lokasi > a {
+  text-decoration: none;
+  color:#342b2b;
+}
+
+
 
 /* From Modal */
 .modal-content {
