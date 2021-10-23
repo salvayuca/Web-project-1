@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+body {
+  min-height: 100vh;
+  background-color: #f7f6f2;
+}
+
+/* Navbar */
+nav {
+  color: #342b2b !important;
+  font-family: "Rubik", sans-serif;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.logo > img {
+  width: 2rem;
+  margin-right: 15px;
+}
+
+.nav-item {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.nav-item > a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-login {
+  border-radius: 3px;
+  text-align: center;
+  padding: 2px 10px 4px;
+  font-size: 15px;
+}
+
+/* Button */
+.btn {
+  color: white;
+  background-color: #5a8653;
+  border-color: #5a8653;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #496b44 !important;
+  border-color: #5a8653;
+  box-shadow: none !important;
+}
+
+/* Title */
+.title {
+  margin: 30px 0px;
+}
+
+.title h5 {
+  margin-top: 15px;
+}
+
+/* paralax */
+.paralax{
+    margin: 0;
+    padding: 0;
+}
+#box1{
+    height: 60vh;
+    width: 100%;
+    background-image: url(../img/gambar1.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+
+/* #box2{
+    height: 60%;
+    width: 100%;
+    background-image: url(../img/gambar2.jpeg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box3{
+    height: 60%;
+    width: 100%;
+    background-image: url(../img/gambar3.jpeg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+} */
+.paralax h1{
+    font-family: arial black;
+    font-size: 50px;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.paralax p {
+  font-family: arial black;
+    font-size: 20px;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+/* Header */
+.header {
+  background-color: #ebf1fa;
+}
+
+/* Card */
+.joined img {
+  width: 25px; 
+}
+.card-text p {
+  line-height: 1;
+}
+
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+  background-color: #5a8653;
+}
+
+.footer a {
+  color: black;
+}
+
+.icons > img {
+  width: 8%;
+  margin: 3px 12px 0px;
+}
+
+.copyright p {
+  font-size: 12px;
+  margin: 5px 0px;
+  font-weight: 500;
+}
