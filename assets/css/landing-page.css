@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+body {
+  min-height: 100vh;
+  background-color: #f7f6f2;
+}
+
+/* Navbar */
+nav {
+  color: #342b2b !important;
+  font-family: "Rubik", sans-serif;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.logo > img {
+  width: 2rem;
+  margin-right: 15px;
+}
+
+.nav-item {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.nav-item > a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-login {
+  border-radius: 3px;
+  text-align: center;
+  padding: 2px 10px 4px;
+  font-size: 15px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  padding-top: 50px !important;
+}
+.header {
+  background-color: #ebf1fa;
+}
+.header .text-content {
+  margin-top: 60px;
+  padding-right: 15px;
+}
+.header #headline {
+  font-size: 60px;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 5px;
+}
+.header #title {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.polaroid {
+  margin: 50px 0px 0px 50px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  padding: 18px 18px 0px;
+  box-shadow: 10px 17px 18px 1px rgb(197, 202, 204);
+  transform: rotate(-5deg);
+  width: 35%;
+}
+.polaroid img {
+  display: block;
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+  object-position: 65% 20%;
+  border-radius: 5px;
+}
+.polaroid p {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+/* Content */
+.first {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.second {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.third {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.btn-success {
+  background-color: #56854e;
+  border-radius: 8px;
+  padding: 7px 25px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus {
+  background-color: #3b5c35 !important;
+  box-shadow: none !important;
+}
+/* About Us */
+#about .text-content {
+  padding-right: 100px;
+}
+#img-about > img {
+  border-radius: 5px;
+  height: 50vh;
+  width: 80%;
+  object-fit: cover;
+  box-shadow: 10px 17px 18px 1px rgb(197, 202, 204);
+}
+
+/* Card */
+#benefit {
+  padding-top: 100px;
+}
+#benefit .icon {
+  padding: 30px 70px;
+}
+
+.icon > img {
+  width: 65px;
+}
+
+.icon > h5 {
+  font-size: 22px;
+}
+
+/* Carousel */
+.carousel-item > img {
+  display: block;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/* Coming Soon */
+#cs {
+  margin: 0px 0px 100px;
+}
+#cs .card {
+  border-radius: 5px;
+}
+#cs .card-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+#cs .card-text {
+  margin-top: -5px;
+  font-size: 13px;
+  margin: -5px 0px 10px;
+}
+#cs .col-1 > img {
+  width: 18px;
+}
+.schedule {
+  margin-bottom: -10px;
+}
+.schedule small {
+  font-size: 12px;
+  margin-left: -15px;
+}
+#cs a {
+  text-decoration: none;
+  margin-left: 125px;
+  color: black;
+  font-size: 15px;
+}
+
+/* Section */
+section {
+  padding-top: 5rem;
+}
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+  background-color: #5a8653;
+  color: #241c1c !important;
+  font-family: "Rubik", sans-serif;
+}
+
+.footer a {
+  color: #241c1c !important;
+}
+
+.footer hr {
+  border: 1px solid black !important;
+}
+
+.icons > img {
+  width: 8%;
+  margin: 3px 12px 0px;
+}
+
+.copyright p {
+  font-size: 12px;
+  margin: 5px 0px;
+  font-weight: 500;
+}
