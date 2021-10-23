@@ -20,7 +20,7 @@
     <div class="container">
       <div class="logo text-uppercase">
         <img src="./assets/img/logo.png" alt="earth" />
-        <a class="navbar-brand text-tittle" href="#">Green Warrior</a>
+        <a class="navbar-brand text-tittle" href="index.html">Green Warrior</a>
       </div>
       <button
         class="navbar-toggler"
@@ -36,16 +36,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav container-fluid justify-content-center">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="index.html#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="index.html#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
+            <a class="nav-link" href="index.html#gallery">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Actions</a>
+            <a class="nav-link" href="action.html">Actions</a>
           </li>
         </ul>
       </div>
@@ -77,7 +77,7 @@
                     <label class="text-content form-check-label" for="exampleCheck1">Remember me</label>
                 </div>
                 <div class="text-center">
-                <button id="btn-submit" type="submit" class="btn btn-primary text-content">Submit</button>
+                <button id="btn-submit" type="submit" class="btn btn-primary text-content">Login</button>
                 </div>
               </form>
             </div>
@@ -99,7 +99,7 @@
       a.preventDefault()
       if (usernamePattern.test(inputUsername.value)) {
         if (passPattern.test(inputPassword.value)) {
-          window.location.href="#"
+          window.location.href="action.html"
           inputPassword.value = ""
         } else {
           alert(`tolong masukan password sesuai ketentuan`)
