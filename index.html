@@ -18,9 +18,11 @@
     <link rel="stylesheet" href="./assets/css/landing-page.css" />
   </head>
 
-  <body>
+  <body id="home">
     <!-- Navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top"
+    >
       <div class="container">
         <div class="logo text-uppercase">
           <img src="./assets/img/logo.png" alt="earth" />
@@ -40,13 +42,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav container-fluid justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#about">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Actions</a>
@@ -60,55 +64,65 @@
     </nav>
 
     <!-- Jumbotron -->
-    <div class="header">
-      <div class="container">
-        <div class="row">
-          <div class="text-content col-7">
-            <p class="text-uppercase pb-2" id="title">our mission</p>
-            <p id="headline">The Right Reward <br />for the Right Action</p>
-            <p class="pb-3" id="decs">
-              Ayo mulai peduli dengan lingkungan dengan aksi langsung membantu
-              menciptakan tempat yang nyaman untuk kita semua
-            </p>
-            <a href="#" class="btn btn-success text-capitalize">get started</a>
-          </div>
-          <div class="polaroid col-5">
-            <img src="./assets/img/header.webp" />
-            <p>Save Our Future</p>
+    <section class="jumbotron">
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="text-content col-7">
+              <p class="text-uppercase pb-2" id="title">our mission</p>
+              <p id="headline">The Right Reward <br />for the Right Action</p>
+              <p class="pb-3" id="decs">
+                Ayo mulai peduli dengan lingkungan dengan aksi langsung membantu
+                menciptakan tempat yang nyaman untuk kita semua
+              </p>
+              <a href="#" class="btn btn-success text-capitalize"
+                >get started</a
+              >
+            </div>
+            <div class="polaroid col-5">
+              <img src="./assets/img/header.webp" />
+              <p>Save Our Future</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ebf1fa"
+          fill-opacity="1"
+          d="M0,128L26.7,138.7C53.3,149,107,171,160,160C213.3,149,267,107,320,90.7C373.3,75,427,85,480,80C533.3,75,587,53,640,74.7C693.3,96,747,160,800,154.7C853.3,149,907,75,960,69.3C1013.3,64,1067,128,1120,170.7C1173.3,213,1227,235,1280,224C1333.3,213,1387,171,1413,149.3L1440,128L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
+        ></path>
+      </svg>
+    </section>
     <!-- Content -->
     <div class="container px-3">
       <!-- About Us -->
-      <div id="about">
+      <section id="about">
         <div class="row">
           <!-- Image -->
-          <div class="col-5" id="img-about">
+          <div class="col-6" id="img-about">
             <img
-              src="https://images.unsplash.com/photo-1570095378004-ce65d6c2d5bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              class="w-100 d-inline-block"
+              src="https://media.greenpeace.org/GPIDoc/TR4/7/e/b/2/GP1SVWAD.jpg?d63766106571"
+              class="d-inline-block"
             />
           </div>
-          <div class="col-1"></div>
           <!-- Content -->
           <div class="text-content col-6">
             <p class="first text-uppercase">about us</p>
             <h2 class="second text-capitalize">green warrior team</h2>
             <p class="third">
-              We are an initiative to to invite youth to take action by
-              providing a platform for youth to take actions that have an impact
-              on the environment. We develop content and experiences to promote
+              We are an initiative to invite youth to take action by providing a
+              platform for youth to take actions that have an impact on the
+              environment. We develop content and experiences to promote
               projects that impact the environmental awareness in Indonesia.
             </p>
             <a href="#" class="btn btn-success text-capitalize">join action</a>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Card -->
-      <div id="benefit">
+      <section id="benefit">
         <!-- Decsription -->
         <div class="text-content text-center">
           <p class="first text-uppercase">why choose us</p>
@@ -157,13 +171,13 @@
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Carousel -->
-      <div class="row" id="gallery">
+      <section class="row" id="gallery">
         <div class="col-4">
           <!-- Decsription -->
-          <div class="text-content text-center">
+          <div class="text-content">
             <p class="first text-uppercase">our memories</p>
             <h2 class="second">Small Things Can Make Big Impacts</h2>
             <p class="third">
@@ -207,31 +221,13 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./assets/img/carousel-1.jpg" alt="volunteer1" />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>
-                    Some representative placeholder content for the first slide.
-                  </p>
-                </div>
               </div>
               <div class="carousel-item">
                 <img src="./assets/img/carousel-2.jpg" alt="volunteer2" />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>
-                    Some representative placeholder content for the second
-                    slide.
-                  </p>
-                </div>
+                <div class="carousel-caption d-none d-md-block"></div>
               </div>
               <div class="carousel-item">
                 <img src="./assets/img/carousel-3.jpg" alt="volunteer3" />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>
-                    Some representative placeholder content for the third slide.
-                  </p>
-                </div>
               </div>
             </div>
             <button
@@ -260,10 +256,10 @@
             </button>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Coming Soon -->
-      <div id="cs">
+      <section id="cs">
         <!-- Decsription -->
         <div class="text-content text-center">
           <p class="first text-uppercase">what's new</p>
@@ -347,7 +343,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
     <!-- Footer -->
@@ -409,5 +405,13 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JS Internal -->
+    <!-- <script>
+      $("body").scrollspy({
+        target: "#sticker",
+        offset: 80,
+      });
+    </script> -->
   </body>
 </html>
