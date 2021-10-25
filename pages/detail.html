@@ -32,7 +32,7 @@
     >
       <div class="container">
         <div class="logo text-uppercase">
-          <a class="navbar-brand" href="#home"
+          <a class="navbar-brand" href="../index.html#home"
             ><img src="../assets/img/logo.png" alt="earth" />Green Warrior</a
           >
         </div>
@@ -65,17 +65,13 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="../pages/actions.html"
+                href="./actions.html"
                 >Actions</a
               >
             </li>
           </ul>
-          <div id="div-username">
-            <a
-              class="btn btn-outline-success navbar-login mt-3"
-              href="../pages/actions.html"
-              ><span id="username">Login</span></a
-            >
+          <div id="div-username" class="btn btn-outline-success navbar-login">
+            <span id="username">Login</span>
           </div>
         </div>
       </div>
@@ -98,14 +94,14 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button
+            <a
               type="button"
               class="close"
               data-bs-dismiss="modal"
               aria-label="Close"
             >
-              <span aria-hidden="true">&times;</span>
-            </button>
+              <span class="close" aria-hidden="true">&times;</span>
+            </a>
           </div>
           <div class="modal-body">
             <div class="mb-3">
@@ -129,13 +125,13 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-success btnCancel"
               data-bs-dismiss="modal"
             >
-              Close
+              Cancel
             </button>
-            <button type="button" id="btnSubmit" class="btn btn-primary">
-              Save changes
+            <button type="button" id="btnSubmit" class="btn btn-success">
+              Submit
             </button>
           </div>
         </div>

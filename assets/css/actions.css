@@ -62,6 +62,7 @@ nav {
 }
 .navbar-login {
   margin-left: 16px;
+  color: #56854e !important;
   border-color: #56854e;
   border-radius: 10px;
   font-weight: 500;
@@ -73,20 +74,28 @@ nav {
 }
 
 /* Button */
-.btn {
-  color: white;
-  background-color: #5a8653;
-  border-color: #5a8653;
-  border-radius: 10px;
-  padding: 10px 25px;
+.btn-success,
+.btn-success.disabled {
+  background-color: #56854e;
+  border-radius: 8px;
+  padding: 7px 25px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
 }
 
 .btn:hover,
 .btn:active,
 .btn:focus {
-  background-color: #496b44 !important;
-  border-color: #5a8653;
+  background-color: #406139 !important;
   box-shadow: none !important;
+}
+
+.btn-success.disabled {
+  opacity: 0.5;
+  font-size: 15px;
+  margin: 0;
 }
 
 /* Title */
@@ -115,22 +124,6 @@ nav {
   background-attachment: fixed;
 }
 
-/* #box2{
-    height: 60%;
-    width: 100%;
-    background-image: url(../img/gambar2.jpeg);
-    background-size: cover;
-    display: table;
-    background-attachment: fixed;
-}
-#box3{
-    height: 60%;
-    width: 100%;
-    background-image: url(../img/gambar3.jpeg);
-    background-size: cover;
-    display: table;
-    background-attachment: fixed;
-} */
 .paralax h1 {
   font-family: arial black;
   font-size: 50px;
@@ -160,11 +153,36 @@ nav {
 }
 
 /* Card */
-.joined img {
-  width: 25px;
+.card {
+  margin-top: 50px;
+  border-radius: 10px;
 }
-.card-text p {
-  line-height: 1;
+.card-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+.card-text {
+  margin-top: -5px;
+  font-size: 13px;
+  margin: -5px 0px 10px;
+}
+.button {
+  margin: 20px 0px 5px;
+}
+.card-img-top {
+  height: 30vh;
+  object-fit: cover;
+}
+.time > img {
+  width: 18px;
+}
+.time small {
+  font-size: 12px;
+}
+.button a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
 }
 
 /* Footer */
@@ -172,7 +190,7 @@ nav {
   padding: 0px;
 }
 .footer {
-  margin-top: -100px;
+  margin-top: -71px;
   background-color: #5a8653;
   color: #241c1c !important;
   font-family: "Rubik", sans-serif;

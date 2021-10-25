@@ -59,12 +59,8 @@
               >
             </li>
           </ul>
-          <div id="div-username">
-            <a
-              class="btn btn-outline-success navbar-login mt-3"
-              href="../pages/actions.html"
-              ><span id="username">Login</span></a
-            >
+          <div id="div-username" class="btn btn-outline-success navbar-login">
+            <span id="username">Login</span>
           </div>
         </div>
       </div>
@@ -88,69 +84,7 @@
 
     <!-- Item Join Action -->
     <div class="container">
-      <!-- Card Baris 1 -->
-      <div id="cardActions" class="row mt-5 gx-5">
-        <!-- <div class="d-flex col-sm-6 col-md-4 justify-content-center my-4">
-          <div class="card">
-            <img
-              src="https://static.gatra.com/foldershared/images/2019/fatikhin/07-Jul/shutterstock_penanaman_pohon.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Project Tanam 1000 Pohon</h5>
-              <div class="card-text">
-                <p>Minggu, 11 Sep, 10.00 AM</p>
-                <p>Taman Kota Jakarta, Jakarta Pusat</p>
-                <p>Greenpeace Indonesia</p>
-              </div>
-              <div class="button text-center">
-                <a href="../pages/detail.html" class="btn btn-primary">JOIN</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex col-sm-6 col-md-4 justify-content-center my-4">
-          <div class="card">
-            <img
-              src="https://static.gatra.com/foldershared/images/2019/fatikhin/07-Jul/shutterstock_penanaman_pohon.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Project Tanam 1000 Pohon</h5>
-              <div class="card-text">
-                <p>Minggu, 11 Sep, 10.00 AM</p>
-                <p>Taman Kota Jakarta, Jakarta Pusat</p>
-                <p>Greenpeace Indonesia</p>
-              </div>
-              <div class="button text-center">
-                <a href="../pages/detail.html" class="btn btn-primary">JOIN</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex col-sm-6 col-md-4 justify-content-center my-4">
-          <div class="card">
-            <img
-              src="https://static.gatra.com/foldershared/images/2019/fatikhin/07-Jul/shutterstock_penanaman_pohon.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Project Tanam 1000 Pohon</h5>
-              <div class="card-text">
-                <p>Minggu, 11 Sep, 10.00 AM</p>
-                <p>Taman Kota Jakarta, Jakarta Pusat</p>
-                <p>Greenpeace Indonesia</p>
-              </div>
-              <div class="button text-center">
-                <a href="../pages/detail.html" class="btn btn-primary">JOIN</a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-      </div>
+      <div id="cardActions" class="row mt-5 gx-5"></div>
     </div>
 
     <!-- Footer -->
@@ -242,31 +176,33 @@
         elRow.insertAdjacentHTML(
           "beforeend",
 
-          `<div class="d-flex col-sm-6 col-md-4 justify-content-center my-4">
-          <div class="card">
+          `<div class="col-md-4 px-5">
+          <div class="card shadow-sm">
             <img
               src=${detail?.image_url}
-              class="card-img-top"
+              class="card-img-top rounded-top"
               alt="image"
             />
-            <div class="card-body">
-              <h5 class="card-title">${detail?.title}</h5>
-              <div class="card-text">
-                <p>${detail?.organization}</p>  
-                <p>${detail?.schedule}</p>
-              </div>
+            <div class="card-body mx-3 mt-md-2">
+              <h5 class="card-title text-capitalize">${detail?.title}</h5>
+              <p class="card-text">${detail?.organization}</p>
+                <div class="schedule">
+                  <div class="time">
+                    <img src="../assets/img/landing-page/hourglass.png" />
+                    <small class="text-muted">${detail?.schedule}</small>
+                  </div>
+                </div>
               <div class="button text-center">
                 ${
                   isJoined
-                    ? `<p>JOINED</p>`
+                    ? `<p class="btn btn-success disabled" role="button" aria-disabled="true">JOIN</p>`
                     : `<a
                       onclick="goDetail(${detail?.id})"
-                      class="btn btn-primary"
+                      class="btn btn-success"
                     >
                       JOIN
                     </a>`
                 }
-                
               </div>
             </div>
           </div>

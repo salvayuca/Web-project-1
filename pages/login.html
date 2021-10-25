@@ -32,7 +32,7 @@
     </nav>
 
     <section class="container mt-0">
-      <div class="row py-5">
+      <div class="row header gx-5">
         <div class="col-8">
           <img
             src="../assets/img/ilustrasi.jpg"
@@ -44,7 +44,7 @@
         <div class="col-4">
           <div class="card">
             <div class="card-header mb-0">
-              <h5 class="text-tittle text-center">Login</h5>
+              <h5 class="text-center">Login</h5>
             </div>
             <div class="card-body">
               <form id="form-login">
@@ -67,30 +67,15 @@
                   >
                   <input type="password" class="form-control" id="password" />
                 </div>
-                <div class="mb-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="exampleCheck1"
-                  />
-                  <p style="color: blue; font: optional">
+                <div class="mb-3">
+                  <small>
                     Your password must include at least 8 characters, both upper
-                    and lowercase letter<br />At least 1 number or symbol (like
+                    and lowercase letter. At least 1 number or symbol (like
                     !@#$%^&*)
-                  </p>
-                  <label
-                    class="text-content form-check-label"
-                    id="showPass"
-                    for="exampleCheck1"
-                    >Show password</label
-                  >
+                  </small>
                 </div>
                 <div class="text-center">
-                  <button
-                    id="btn-submit"
-                    type="submit"
-                    class="btn btn-primary text-content"
-                  >
+                  <button id="btn-submit" type="submit" class="btn btn-success">
                     Login
                   </button>
                 </div>

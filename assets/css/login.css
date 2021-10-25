@@ -8,10 +8,18 @@ body {
 
 /* Font Type */
 .text-content {
+  color: #342b2b;
   font-family: "Nunito", sans-serif;
+  font-weight: 700;
 }
-.text-tittle {
+.card-header {
+  background-color: #56854e;
   font-family: "Rubik", sans-serif;
+  color: white;
+  padding-top: 20px;
+}
+.mb-3 small {
+  color: #578144;
 }
 
 /* Navbar */
@@ -28,20 +36,25 @@ nav {
   width: 2rem;
   margin-right: 15px;
 }
+.header {
+  padding-top: 100px;
+}
 
 /* Button */
-.btn {
-  background-color: #5a8653;
-  border-color: #5a8653;
-  border-radius: 10px;
-  padding: 10px 25px;
+.btn-success {
+  background-color: #56854e;
+  border-radius: 8px;
+  padding: 7px 25px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
 }
 
 .btn:hover,
 .btn:active,
 .btn:focus {
-  background-color: #496b44 !important;
-  border-color: #5a8653;
+  background-color: #406139 !important;
   box-shadow: none !important;
 }
 
