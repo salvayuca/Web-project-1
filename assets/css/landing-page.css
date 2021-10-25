@@ -7,17 +7,28 @@ body {
 }
 
 /* Navbar */
+nav {
+  font-family: "Rubik", sans-serif !important;
+}
 .navbar {
-  color: #342b2b !important;
-  font-family: "Rubik", sans-serif;
   padding: 10px 0px;
 }
-
+.nav-link.active {
+  position: relative;
+}
+.nav-link.active::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #56854e;
+}
 .navbar-brand {
   font-weight: 700;
 }
-
-.logo > img {
+.logo a > img {
   width: 2rem;
   margin-right: 15px;
 }
@@ -33,7 +44,6 @@ body {
   margin-left: 20px;
   position: relative;
 }
-
 .nav-item::after {
   position: absolute;
   bottom: 0;
@@ -44,9 +54,23 @@ body {
   background-color: #56854e;
   transition: width 0.3s ease-out;
 }
-
 .nav-item:hover.nav-item::after {
   width: 100%;
+}
+.nav-item > a {
+  color: #342b2b !important;
+}
+.navbar-login {
+  margin-left: 16px;
+  color: #56854e !important;
+  border-color: #56854e;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+}
+.navbar-login:hover {
+  border-color: #56854e;
+  color: #ffffff !important;
 }
 
 /* Jumbotron */
@@ -127,10 +151,10 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-.btn-success:hover,
-.btn-success:active,
-.btn-success:focus {
-  background-color: #3b5c35 !important;
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #406139 !important;
   box-shadow: none !important;
 }
 
@@ -226,20 +250,16 @@ section {
   color: #241c1c !important;
   font-family: "Rubik", sans-serif;
 }
-
 .footer a {
   color: #241c1c !important;
 }
-
 .footer hr {
   border: 1px solid black !important;
 }
-
 .icons > img {
   width: 8%;
   margin: 3px 12px 0px;
 }
-
 .footer p {
   font-size: 12px;
   font-weight: 500;
@@ -251,9 +271,16 @@ section {
   .text-content {
     text-align: center;
   }
+  .nav-link.active::after {
+    display: none;
+  }
+  .nav-item {
+    padding-top: 5px;
+  }
   .navbar-login {
-    margin-top: 100px;
-    margin-left: 20px;
+    margin-top: 10px;
+    padding: 3px;
+    margin-left: -18px;
     width: 100px;
   }
 

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanam Pohon</title>
+
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Internal -->
+    <link rel="stylesheet" href="../assets/css/detail.css" />
+
+    <!-- CSS Custom-->
+    <style>
+      /* Small devices (landscape phones, less than 768px) */
+      @media only screen and (max-width: 768px) {
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top"
+    >
+      <div class="container">
+        <div class="logo text-uppercase">
+          <a class="navbar-brand" href="#home"
+            ><img src="../assets/img/logo.png" alt="earth" />Green Warrior</a
+          >
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav container-fluid justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../pages/actions.html"
+                >Actions</a
+              >
+            </li>
+          </ul>
+          <a
+            class="btn btn-outline-success navbar-login"
+            href="../pages/login.html"
+            >Login</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section class="container mt-5">
+      <div class="row g-5 pt-5">
+        <div class="col-8">
+          <!-- Thumbnail -->
+          <div class="row g-5">
+            <img
+              src="../assets/img/actions/gambar1.jpg"
+              class="image me-100 float-start"
+              alt="Thumbnail"
+            />
+          </div>
+          <!-- Description -->
+          <div class="text-content" id="decs">
+            <br />
+            <h3>Description</h3>
+            <p>[CALL FOR VOLUNTEER]</p>
+            <p>
+              Program <em>#Tanampohon</em> merupakan gerakan sosial di bidang
+              lingkungan untuk memperbaiki taman kota yang ada di seluruh
+              Indonesia. Kegiatan ini akan melibatkan 500 relawan yang berjiwa
+              tulus.
+            </p>
+            <p>
+              Untuk kamu yang ingin memperbaiki bumi ini, Kuyyy Sabi banget ikut
+              program ini
+            </p>
+            <p>
+              <a>Nama Pekerjaan : Relawan Tanam Pohon </a> <br />
+              <a>Relawan Dibutuhkan : 500 orang </a> <br />
+              <a>Total Jam Kerja : 2 jam</a> <br />
+              <a
+                >Tugas Relawan : Relawan diharapkan bersedia secara sukarela
+                menanam pohon.</a
+              >
+            </p>
+            <a>Kriteria Relawan</a>
+            <ol type="1">
+              <li>Pemuda/i berusia 20-35 tahun</li>
+              <li>Berbadan sehat jasmani dan rohani</li>
+              <li>Mengikuti orientasi atau training relawan</li>
+              <li>Mengikuti aturan yang diberlakukan sesuai pedoman</li>
+            </ol>
+            <a>Perlengkapan Relawan</a><br />
+            <li>Sarung tangan</li>
+            <li>Skop (jika ada)</li>
+          </div>
+        </div>
+
+        <!-- Info Card -->
+        <div class="category col-4">
+          <div class="joinCard text-content text-center w-100">
+            <div class="title p-3">
+              <h5><strong>PROJECT TANAM POHON</strong></h5>
+              <h6>Greenpeace Indonesia</h6>
+            </div>
+            <div class="body p-3">
+              <div class="joinTime">
+                <div class="waktu">
+                  <p>Minggu, 11 September 2021</p>
+                </div>
+                <div class="lokasi">
+                  <img src="../assets/img/placeholder.png" alt="icon" />
+                  <a
+                    href="https://goo.gl/maps/CwCVZ9Yc7S6Y7aq79"
+                    target="_blank"
+                    >Taman Kota Jakarta. Jakarta Pusat</a
+                  >
+                </div>
+                <br />
+              </div>
+              <p class="joinDeadline text-danger">
+                Batas Registrasi : 9 September 2021
+              </p>
+              <br />
+              <a
+                class="joinButton btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#form"
+                >JOIN</a
+              ><br /><br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="form" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-white">DAFTAR ACTION</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="inputNama" class="form-label">Nama Lengkap</label>
+                <input type="name" class="form-control" id="inputNama" />
+              </div>
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputNoHp" class="form-label">No. HP</label>
+                <input type="number" class="form-control" id="inputNoHp" />
+              </div>
+              <label for="inputTanggal" class="form-label">Tanggal lahir</label>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01"
+                  >Tanggal</label
+                >
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <label class="input-group-text" for="inputGroupSelect01"
+                  >Bulan</label
+                >
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected></option>
+                  <option value="1">Januari</option>
+                  <option value="2">Februari</option>
+                  <option value="3">Maret</option>
+                  <option value="4">April</option>
+                  <option value="5">Mei</option>
+                  <option value="6">Juni</option>
+                  <option value="7">Juli</option>
+                  <option value="8">Agustus</option>
+                  <option value="9">September</option>
+                  <option value="10">Oktober</option>
+                  <option value="11">November</option>
+                  <option value="12">Desember</option>
+                </select>
+                <label class="input-group-text" for="inputGroupSelect01"
+                  >Tahun</label
+                >
+                <input type="tanggal" class="form-control" id="inputTanggal" />
+              </div>
+              <label for="exampleDataList" class="form-label"
+                >Kota/Kabupaten Domisili</label
+              >
+              <input
+                class="form-control"
+                list="datalistOptions"
+                id="exampleDataList"
+                placeholder="Type to search..."
+              />
+              <datalist id="datalistOptions">
+                <option value="Jakarta"></option>
+                <option value="Yogyakarta"></option>
+                <option value="Bekasi"></option>
+                <option value="Bandung"></option>
+                <option value="Tangerang"></option>
+              </datalist>
+
+              <label for="exampleDataList" class="form-label">Pekerjaan</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">SMA/SMK</option>
+                <option value="2">Mahasiswa</option>
+                <option value="3">Lainnya</option>
+              </select>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Alasan</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btnCancel btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-success">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="last text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#5a8653"
+          fill-opacity="1"
+          d="M0,160L30,160C60,160,120,160,180,154.7C240,149,300,139,360,144C420,149,480,171,540,160C600,149,660,107,720,106.7C780,107,840,149,900,170.7C960,192,1020,192,1080,186.7C1140,181,1200,171,1260,170.7C1320,171,1380,181,1410,186.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+      <div class="footer">
+        <div class="container">
+          <div class="row gx-5 pt-4">
+            <!-- Logo -->
+            <div class="col-md-4 logo">
+              <a class="navbar-brand" href="#home"
+                ><img src="../assets/img/logo.png" alt="earth" />Green
+                Warrior</a
+              >
+            </div>
+            <!-- About Us -->
+            <div class="col-6 col-md-4" id="about-us">
+              <h6 class="text-center fw-bolder">About Us</h6>
+              <p>
+                Green Warrior adalah website yang disediakan untuk anak muda
+                agar lebih peduli dengan lingkungan
+              </p>
+            </div>
+            <!-- Follow Us -->
+            <div class="col-6 col-md-4" id="find-us">
+              <h6 class="text-center fw-bolder">Find Us At</h6>
+              <div class="icons d-flex justify-content-center">
+                <img src="../assets/img/landing-page/facebook.png" alt="fb" />
+
+                <img src="../assets/img/landing-page/twitter.png" alt="tw" />
+
+                <img src="../assets/img/landing-page/instagram.png" alt="ig" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="copyright text-center">
+          <p class="mb-0 pb-3">
+            Copyright © Green Warrior Indonesia 2021. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

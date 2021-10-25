@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Internal -->
+    <link rel="stylesheet" href="../assets/css/login.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top"
+    >
+      <div class="container">
+        <div class="logo text-uppercase">
+          <a class="navbar-brand" href="../index.html#home"
+            ><img src="../assets/img/logo.png" alt="earth" />Green Warrior</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section class="container mt-0">
+      <div class="row py-5">
+        <div class="col-8">
+          <img
+            src="../assets/img/ilustrasi.jpg"
+            class="image w-100 float-start"
+            alt="img"
+          />
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <div class="card-header mb-0">
+              <h5 class="text-tittle text-center">Login</h5>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="Username" class="text-content form-label"
+                    >Username</label
+                  >
+                  <input
+                    type="Username"
+                    class="form-control"
+                    id="Username"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="exampleInputPassword1"
+                    class="text-content form-label"
+                    >Password</label
+                  >
+                  <input type="password" class="form-control" id="Password" />
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label
+                    class="text-content form-check-label"
+                    for="exampleCheck1"
+                    >Remember me</label
+                  >
+                </div>
+                <div class="text-center">
+                  <button
+                    id="btn-submit"
+                    type="submit"
+                    class="btn btn-primary text-content"
+                  >
+                    Login
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <section class="last text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#5a8653"
+          fill-opacity="1"
+          d="M0,160L30,160C60,160,120,160,180,154.7C240,149,300,139,360,144C420,149,480,171,540,160C600,149,660,107,720,106.7C780,107,840,149,900,170.7C960,192,1020,192,1080,186.7C1140,181,1200,171,1260,170.7C1320,171,1380,181,1410,186.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+      <div class="footer">
+        <div class="container">
+          <div class="row gx-5 pt-4">
+            <!-- Logo -->
+            <div class="col-md-4 logo">
+              <a class="navbar-brand" href="#home"
+                ><img src="../assets/img/logo.png" alt="earth" />Green
+                Warrior</a
+              >
+            </div>
+            <!-- About Us -->
+            <div class="col-6 col-md-4" id="about-us">
+              <h6 class="text-center fw-bolder">About Us</h6>
+              <p>
+                Green Warrior adalah website yang disediakan untuk anak muda
+                agar lebih peduli dengan lingkungan
+              </p>
+            </div>
+            <!-- Follow Us -->
+            <div class="col-6 col-md-4" id="find-us">
+              <h6 class="text-center fw-bolder">Find Us At</h6>
+              <div class="icons d-flex justify-content-center">
+                <img src="../assets/img/landing-page/facebook.png" alt="fb" />
+
+                <img src="../assets/img/landing-page/twitter.png" alt="tw" />
+
+                <img src="../assets/img/landing-page/instagram.png" alt="ig" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="copyright text-center">
+          <p class="mb-0 pb-3">
+            Copyright © Green Warrior Indonesia 2021. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const inputUsername = document.querySelector("#Username");
+      const inputPassword = document.querySelector("#Password");
+      const btnSubmit = document.querySelector("#btn-submit");
+
+      const usernamePattern = new RegExp("^[^0-9][^/_!@#$%^&*.]{5,}");
+      const passPattern = new RegExp(
+        "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[/!@#$%^&*.])(?=.{8,})"
+      );
+
+      btnSubmit.addEventListener("click", function (a) {
+        a.preventDefault();
+        if (usernamePattern.test(inputUsername.value)) {
+          if (passPattern.test(inputPassword.value)) {
+            inputUsername.value = window.location.href = "./action.html";
+            inputPassword.value = "";
+          } else {
+            alert(`tolong masukan password sesuai ketentuan`);
+            inputPassword.value = "";
+          }
+        } else {
+          alert(`tolong masukan username yang valid`);
+          inputPassword.value = "";
+        }
+      });
+    </script>
+
+    <!-- JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

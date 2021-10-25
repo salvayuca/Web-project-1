@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  min-height: 100vh;
+  background-color: #f7f6f2;
+}
+
+/* Font Type */
+.text-content {
+  font-family: "Nunito", sans-serif;
+}
+.text-tittle {
+  font-family: "Rubik", sans-serif;
+}
+
+/* Navbar */
+nav {
+  font-family: "Rubik", sans-serif !important;
+}
+.navbar {
+  padding: 10px 0px;
+}
+.navbar-brand {
+  font-weight: 700;
+}
+.logo a > img {
+  width: 2rem;
+  margin-right: 15px;
+}
+
+/* Button */
+.btn {
+  background-color: #5a8653;
+  border-color: #5a8653;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #496b44 !important;
+  border-color: #5a8653;
+  box-shadow: none !important;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.image {
+  border-radius: 15px;
+  height: 80%;
+}
+
+/* Footer */
+.last {
+  padding: 0px;
+}
+.footer {
+  margin-top: -100px;
+  background-color: #5a8653;
+  color: #241c1c !important;
+  font-family: "Rubik", sans-serif;
+}
+.footer a {
+  color: #241c1c !important;
+}
+.footer hr {
+  border: 1px solid black !important;
+}
+.icons > img {
+  width: 8%;
+  margin: 3px 12px 0px;
+}
+.footer p {
+  font-size: 12px;
+  font-weight: 500;
+}
