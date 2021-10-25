@@ -14,7 +14,8 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-* Navbar */ nav {
+/* Navbar */
+nav {
   font-family: "Rubik", sans-serif !important;
 }
 .navbar {
@@ -69,15 +70,11 @@ body {
 }
 .navbar-login {
   margin-left: 16px;
-  color: #56854e !important;
+  color: #ffffff;
   border-color: #56854e;
   border-radius: 10px;
   font-weight: 500;
   font-family: "Rubik", sans-serif;
-}
-.navbar-login:hover {
-  border-color: #56854e;
-  color: #ffffff !important;
 }
 
 /* Button */

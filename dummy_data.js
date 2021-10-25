@@ -3,14 +3,12 @@ const data = [
     id: 1,
     title: "Project Tanam 1000 Pohon",
     organization: "Greenpeace Indonesia",
-    schedule: `<p>
-    Minggu, 11 September 2021<br />
-    10.00 WIB
-  </p>`,
+    schedule: "Minggu, 11 September 2021",
     image_url:
       "https://static.gatra.com/foldershared/images/2019/fatikhin/07-Jul/shutterstock_penanaman_pohon.jpg",
     icons_img: "./assets/img/placeholder.png",
-    location: "Taman Kota Jakarta. Jakarta Pusat",
+    location: "Taman Kota Jakarta, Jakarta Pusat",
+    loc_url: "https://goo.gl/maps/CwCVZ9Yc7S6Y7aq79",
     maxRegist: "Batas Registrasi : 9 September 2021",
     decs: `            <h3>Description</h3>
     <p>[CALL FOR VOLUNTEER]</p>
@@ -53,7 +51,8 @@ const data = [
       "https://media.istockphoto.com/photos/woman-take-care-of-cypress-plants-picture-id1316944376?k=20&m=1316944376&s=612x612&w=0&h=GJKMEUJmqPekO8DuwosKV4OyPhwiJlgKg4lWg8pugPk=",
     icons_img:
       "https://cdn-icons.flaticon.com/png/512/819/premium/819814.png?token=exp=1634972149~hmac=8ee71f475d9a305b5682f63bc367f430",
-    location: "Taman Kota Jakarta. Jakarta Pusat",
+    location: "Teras Cikapundung BBWS, Bandung",
+    loc_url: "https://goo.gl/maps/qXQwVqTdcHKwHopA8",
     maxRegist: "Batas Registrasi : 30 November 2021",
     decs: `            <h3>Description</h3>
     <p>[CALL FOR VOLUNTEER]</p>
@@ -87,7 +86,8 @@ const data = [
       "https://images.unsplash.com/photo-1616680214084-22670de1bc82?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
     icons_img:
       "https://cdn-icons.flaticon.com/png/512/819/premium/819814.png?token=exp=1634972149~hmac=8ee71f475d9a305b5682f63bc367f430",
-    location: "Pantai Pangandaran, Jawa Barat",
+    location: "Pantai Pangandaran, Ciamis",
+    loc_url: "https://goo.gl/maps/VQQgrFb8YqV4RtKcA",
     maxRegist: "Batas Registrasi : 3 Desember 2021",
     decs: `            <h3>Description</h3>
     <p>[CALL FOR VOLUNTEER]</p>

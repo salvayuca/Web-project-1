@@ -70,212 +70,73 @@
               >
             </li>
           </ul>
-          <a
-            class="btn btn-outline-success navbar-login"
-            href="../pages/login.html"
-            >Login</a
-          >
+          <div id="div-username">
+            <a
+              class="btn btn-outline-success navbar-login mt-3"
+              href="../pages/actions.html"
+              ><span id="username">Login</span></a
+            >
+          </div>
         </div>
       </div>
     </nav>
 
     <section class="container mt-5">
-      <div class="row g-5 pt-5">
-        <div class="col-8">
-          <!-- Thumbnail -->
-          <div class="row g-5">
-            <img
-              src="../assets/img/actions/gambar1.jpg"
-              class="image me-100 float-start"
-              alt="Thumbnail"
-            />
-          </div>
-          <!-- Description -->
-          <div class="text-content" id="decs">
-            <br />
-            <h3>Description</h3>
-            <p>[CALL FOR VOLUNTEER]</p>
-            <p>
-              Program <em>#Tanampohon</em> merupakan gerakan sosial di bidang
-              lingkungan untuk memperbaiki taman kota yang ada di seluruh
-              Indonesia. Kegiatan ini akan melibatkan 500 relawan yang berjiwa
-              tulus.
-            </p>
-            <p>
-              Untuk kamu yang ingin memperbaiki bumi ini, Kuyyy Sabi banget ikut
-              program ini
-            </p>
-            <p>
-              <a>Nama Pekerjaan : Relawan Tanam Pohon </a> <br />
-              <a>Relawan Dibutuhkan : 500 orang </a> <br />
-              <a>Total Jam Kerja : 2 jam</a> <br />
-              <a
-                >Tugas Relawan : Relawan diharapkan bersedia secara sukarela
-                menanam pohon.</a
-              >
-            </p>
-            <a>Kriteria Relawan</a>
-            <ol type="1">
-              <li>Pemuda/i berusia 20-35 tahun</li>
-              <li>Berbadan sehat jasmani dan rohani</li>
-              <li>Mengikuti orientasi atau training relawan</li>
-              <li>Mengikuti aturan yang diberlakukan sesuai pedoman</li>
-            </ol>
-            <a>Perlengkapan Relawan</a><br />
-            <li>Sarung tangan</li>
-            <li>Skop (jika ada)</li>
-          </div>
-        </div>
-
-        <!-- Info Card -->
-        <div class="category col-4">
-          <div class="joinCard text-content text-center w-100">
-            <div class="title p-3">
-              <h5><strong>PROJECT TANAM POHON</strong></h5>
-              <h6>Greenpeace Indonesia</h6>
-            </div>
-            <div class="body p-3">
-              <div class="joinTime">
-                <div class="waktu">
-                  <p>Minggu, 11 September 2021</p>
-                </div>
-                <div class="lokasi">
-                  <img src="../assets/img/placeholder.png" alt="icon" />
-                  <a
-                    href="https://goo.gl/maps/CwCVZ9Yc7S6Y7aq79"
-                    target="_blank"
-                    >Taman Kota Jakarta. Jakarta Pusat</a
-                  >
-                </div>
-                <br />
-              </div>
-              <p class="joinDeadline text-danger">
-                Batas Registrasi : 9 September 2021
-              </p>
-              <br />
-              <a
-                class="joinButton btn btn-success"
-                data-bs-toggle="modal"
-                data-bs-target="#form"
-                >JOIN</a
-              ><br /><br />
-            </div>
-          </div>
-        </div>
-      </div>
+      <div id="cardDecs" class="row g-5 pt-5"></div>
     </section>
 
     <!-- Modal -->
-    <div class="modal" id="form" tabindex="-1">
-      <div class="modal-dialog">
+    <div
+      class="modal fade"
+      id="form"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title text-white">DAFTAR ACTION</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
             <button
               type="button"
-              class="btn-close"
+              class="close"
               data-bs-dismiss="modal"
               aria-label="Close"
-            ></button>
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
           <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="inputNama" class="form-label">Nama Lengkap</label>
-                <input type="name" class="form-control" id="inputNama" />
-              </div>
-              <div class="mb-3">
-                <label for="inputEmail" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="inputEmail"
-                  aria-describedby="emailHelp"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="inputNoHp" class="form-label">No. HP</label>
-                <input type="number" class="form-control" id="inputNoHp" />
-              </div>
-              <label for="inputTanggal" class="form-label">Tanggal lahir</label>
-              <div class="input-group mb-3">
-                <label class="input-group-text" for="inputGroupSelect01"
-                  >Tanggal</label
-                >
-                <select class="form-select" id="inputGroupSelect01">
-                  <option selected></option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                </select>
-                <label class="input-group-text" for="inputGroupSelect01"
-                  >Bulan</label
-                >
-                <select class="form-select" id="inputGroupSelect01">
-                  <option selected></option>
-                  <option value="1">Januari</option>
-                  <option value="2">Februari</option>
-                  <option value="3">Maret</option>
-                  <option value="4">April</option>
-                  <option value="5">Mei</option>
-                  <option value="6">Juni</option>
-                  <option value="7">Juli</option>
-                  <option value="8">Agustus</option>
-                  <option value="9">September</option>
-                  <option value="10">Oktober</option>
-                  <option value="11">November</option>
-                  <option value="12">Desember</option>
-                </select>
-                <label class="input-group-text" for="inputGroupSelect01"
-                  >Tahun</label
-                >
-                <input type="tanggal" class="form-control" id="inputTanggal" />
-              </div>
-              <label for="exampleDataList" class="form-label"
-                >Kota/Kabupaten Domisili</label
-              >
+            <div class="mb-3">
+              <label for="inputNama" class="form-label">Nama Lengkap</label>
+              <input type="name" class="form-control" id="inputNama" />
+            </div>
+            <div class="mb-3">
+              <label for="inputEmail" class="form-label">Email</label>
               <input
+                type="email"
                 class="form-control"
-                list="datalistOptions"
-                id="exampleDataList"
-                placeholder="Type to search..."
+                id="inputEmail"
+                aria-describedby="emailHelp"
               />
-              <datalist id="datalistOptions">
-                <option value="Jakarta"></option>
-                <option value="Yogyakarta"></option>
-                <option value="Bekasi"></option>
-                <option value="Bandung"></option>
-                <option value="Tangerang"></option>
-              </datalist>
-
-              <label for="exampleDataList" class="form-label">Pekerjaan</label>
-              <select class="form-select" aria-label="Default select example">
-                <option selected></option>
-                <option value="1">SMA/SMK</option>
-                <option value="2">Mahasiswa</option>
-                <option value="3">Lainnya</option>
-              </select>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"
-                  >Alasan</label
-                >
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                ></textarea>
-              </div>
-            </form>
+            </div>
+            <div class="mb-3">
+              <label for="inputNoHp" class="form-label">No. HP</label>
+              <input type="number" class="form-control" id="inputNoHp" />
+            </div>
           </div>
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btnCancel btn-secondary"
+              class="btn btn-secondary"
               data-bs-dismiss="modal"
             >
-              Cancel
+              Close
             </button>
-            <button type="button" class="btn btn-success">Submit</button>
+            <button type="button" id="btnSubmit" class="btn btn-primary">
+              Save changes
+            </button>
           </div>
         </div>
       </div>
@@ -336,5 +197,111 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <script type="module">
+      import data from "../dummy_data.js";
+
+      // Username dan Password
+      const elUsername = document.querySelector("#username");
+      const username = localStorage.getItem("username");
+
+      if (username) {
+        elUsername.innerHTML = username;
+      }
+      const id = localStorage.getItem("id");
+
+      data.forEach((detail) => {
+        if (detail.id === Number(id)) {
+          const elRow = document.getElementById("cardDecs");
+          elRow.insertAdjacentHTML(
+            "beforeend",
+
+            `<div class="col-8">
+          <!-- Thumbnail -->
+          <div class="row g-5">
+            <img
+              src=${detail?.image_url}
+              class="image me-100 float-start"
+              alt="Thumbnail"
+            />
+          </div>
+          <!-- Description -->
+          <div class="text-content" id="decs">
+            <br />
+            ${detail?.decs}
+          </div>
+        </div>
+
+        <!-- Info Card -->
+        <div class="category col-4">
+          <div class="joinCard text-content text-center w-100">
+            <div class="title p-3">
+              <h5><strong>${detail?.title}</strong></h5>
+              <h6>${detail?.organization}</h6>
+            </div>
+            <div class="body p-3">
+              <div class="joinTime">
+                <div class="waktu">
+                  <p>${detail?.schedule}</p>
+                </div>
+                <div class="lokasi">
+                  <img src="../assets/img/placeholder.png" alt="icon" />
+                  <a
+                    href=${detail?.loc_url}
+                    target="_blank"
+                    >${detail?.location}</a
+                  >
+                </div>
+                <br />
+              </div>
+              <p class="joinDeadline text-danger">
+                ${detail?.maxRegist}
+              </p>
+              <br />
+              <a
+                class="joinButton btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#form"
+                >JOIN</a
+              ><br /><br />
+            </div>
+          </div>
+        </div>`
+          );
+        }
+      });
+
+      const elNama = document.getElementById("inputNama");
+      const elEmail = document.getElementById("inputEmail");
+      const elnoHp = document.getElementById("inputNoHp");
+      const btnSubmit = document.getElementById("btnSubmit");
+
+      btnSubmit.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const nama = elNama.value;
+        const email = elEmail.value;
+        const nomor = elnoHp.value;
+        const username = localStorage.getItem("username");
+        const dataJoin = localStorage.getItem("data_" + id);
+        if (username) {
+          const data = { username, nama, email, nomor };
+
+          if (id) {
+            if (dataJoin) {
+              const arrDataJoin = JSON.parse(dataJoin);
+              const newDataJoin = [data, ...arrDataJoin];
+              localStorage.setItem("data_" + id, JSON.stringify(newDataJoin));
+            } else {
+              localStorage.setItem("data_" + id, JSON.stringify([data]));
+            }
+            window.location.href = "./actions.html";
+          }
+        } else {
+          localStorage.setItem("path", "./detail.html");
+          window.location.href = "./login.html";
+        }
+      });
+    </script>
   </body>
 </html>

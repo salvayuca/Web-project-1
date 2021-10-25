@@ -126,6 +126,9 @@ nav {
 }
 
 /* Content */
+.text-content {
+  font-family: "Nunito", sans-serif;
+}
 .first {
   font-size: 18px;
   margin-bottom: 12px;
@@ -133,7 +136,7 @@ nav {
 
 .second {
   margin-bottom: 12px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .third {
@@ -218,6 +221,10 @@ nav {
 .time {
   margin-bottom: 10px;
 }
+#cs .card-img-top {
+  height: 30vh;
+  object-fit: cover;
+}
 #cs .time > img {
   width: 18px;
 }
@@ -264,6 +271,9 @@ section {
   font-size: 12px;
   font-weight: 500;
 }
+.copyright > p {
+  font-weight: 400;
+}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -277,7 +287,7 @@ section {
   .nav-item {
     padding-top: 5px;
   }
-  .navbar-login {
+  .navbar-login .navbar-logout {
     margin-top: 10px;
     padding: 3px;
     margin-left: -18px;

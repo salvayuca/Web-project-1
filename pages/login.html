@@ -47,15 +47,15 @@
               <h5 class="text-tittle text-center">Login</h5>
             </div>
             <div class="card-body">
-              <form>
+              <form id="form-login">
                 <div class="mb-3">
                   <label for="Username" class="text-content form-label"
                     >Username</label
                   >
                   <input
-                    type="Username"
+                    type="username"
                     class="form-control"
-                    id="Username"
+                    id="username"
                     aria-describedby="emailHelp"
                   />
                 </div>
@@ -65,7 +65,7 @@
                     class="text-content form-label"
                     >Password</label
                   >
-                  <input type="password" class="form-control" id="Password" />
+                  <input type="password" class="form-control" id="password" />
                 </div>
                 <div class="mb-3 form-check">
                   <input
@@ -73,10 +73,16 @@
                     class="form-check-input"
                     id="exampleCheck1"
                   />
+                  <p style="color: blue; font: optional">
+                    Your password must include at least 8 characters, both upper
+                    and lowercase letter<br />At least 1 number or symbol (like
+                    !@#$%^&*)
+                  </p>
                   <label
                     class="text-content form-check-label"
+                    id="showPass"
                     for="exampleCheck1"
-                    >Remember me</label
+                    >Show password</label
                   >
                 </div>
                 <div class="text-center">
@@ -143,31 +149,44 @@
       </div>
     </section>
 
-    <script>
-      const inputUsername = document.querySelector("#Username");
-      const inputPassword = document.querySelector("#Password");
+    <script type="module">
+      const formLogin = document.querySelector("#form-login");
+      const inputUsername = document.querySelector("#username");
+      const inputPassword = document.querySelector("#password");
+      const showPassword = document.querySelector("#showPass");
       const btnSubmit = document.querySelector("#btn-submit");
 
+      // REGEX
       const usernamePattern = new RegExp("^[^0-9][^/_!@#$%^&*.]{5,}");
       const passPattern = new RegExp(
         "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[/!@#$%^&*.])(?=.{8,})"
       );
 
-      btnSubmit.addEventListener("click", function (a) {
-        a.preventDefault();
-        if (usernamePattern.test(inputUsername.value)) {
-          if (passPattern.test(inputPassword.value)) {
-            inputUsername.value = window.location.href = "./action.html";
+      formLogin.onsubmit = function (e) {
+        e.preventDefault();
+
+        const username = inputUsername.value;
+        const password = inputPassword.value;
+
+        if (usernamePattern.test(username)) {
+          if (passPattern.test(password)) {
+            localStorage.setItem("username", username);
+            const path = localStorage.getItem("path");
+            if (path) {
+              window.location.href = path;
+            } else {
+              window.location.href = "./actions.html";
+            }
             inputPassword.value = "";
           } else {
-            alert(`tolong masukan password sesuai ketentuan`);
+            alert(`Tolong masukan password sesuai ketentuan`);
             inputPassword.value = "";
           }
         } else {
-          alert(`tolong masukan username yang valid`);
+          alert(`Tolong masukan username yang valid`);
           inputPassword.value = "";
         }
-      });
+      };
     </script>
 
     <!-- JS Bootstrap -->
