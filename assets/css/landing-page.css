@@ -145,6 +145,7 @@ nav {
 
 .btn-success {
   background-color: #56854e;
+  border-color: #56854e;
   border-radius: 8px;
   padding: 7px 25px;
   font-size: 18px;
@@ -209,10 +210,12 @@ nav {
   border-radius: 5px;
 }
 #cs .card-title {
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-weight: 700;
 }
 #cs .card-text {
+  font-family: "Nunito", sans-serif;
   margin-top: -5px;
   font-size: 13px;
   margin: -5px 0px 10px;
@@ -229,6 +232,7 @@ nav {
 }
 .time small {
   font-size: 12px;
+  font-family: "Nunito", sans-serif;
 }
 #cs span img {
   margin-top: -2px;
@@ -239,6 +243,7 @@ nav {
   text-decoration: none;
   color: #342b2b;
   font-size: 15px;
+  font-family: "Rubik", sans-serif;
 }
 
 /* Section */

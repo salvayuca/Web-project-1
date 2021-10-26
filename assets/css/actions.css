@@ -76,6 +76,7 @@ nav {
 .btn-success,
 .btn-success.disabled {
   background-color: #56854e;
+  border-color: #56854e;
   border-radius: 8px;
   padding: 7px 25px;
   font-size: 18px;
@@ -124,9 +125,12 @@ nav {
 }
 
 .paralax h1 {
-  font-family: arial black;
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  letter-spacing: 20px;
+  text-shadow: 5px 5px 5px #5c5757;
   font-size: 50px;
-  color: white;
+  color: #f7f6f2;
   margin: 0px;
   text-align: center;
   display: flex;
@@ -135,9 +139,12 @@ nav {
   vertical-align: middle;
 }
 .paralax p {
-  font-family: arial black;
+  font-family: "Nunito", sans-serif;
+  text-shadow: 5px 5px 5px #2c2b2b;
+  padding-top: 30px;
+  letter-spacing: 5px;
   font-size: 20px;
-  color: white;
+  color: #f7f6f2;
   margin: 0px;
   text-align: center;
   display: flex;
@@ -157,16 +164,21 @@ nav {
   border-radius: 10px;
 }
 .card-title {
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-weight: 700;
 }
 .card-text {
+  font-family: "Nunito", sans-serif;
   margin-top: -5px;
   font-size: 13px;
   margin: -5px 0px 10px;
 }
 .button {
   margin: 20px 0px 5px;
+}
+.time {
+  margin-bottom: 10px;
 }
 .card-img-top {
   height: 30vh;
@@ -177,11 +189,18 @@ nav {
 }
 .time small {
   font-size: 12px;
+  font-family: "Nunito", sans-serif;
 }
-.button a {
+span img {
+  margin-top: -2px;
+  width: 18px;
+  margin-left: 5px;
+}
+a {
   text-decoration: none;
-  color: white;
+  color: #342b2b;
   font-size: 15px;
+  font-family: "Rubik", sans-serif;
 }
 
 /* Footer */
