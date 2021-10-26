@@ -16,13 +16,6 @@
 
     <!-- CSS Internal -->
     <link rel="stylesheet" href="../assets/css/detail.css" />
-
-    <!-- CSS Custom-->
-    <style>
-      /* Small devices (landscape phones, less than 768px) */
-      @media only screen and (max-width: 768px) {
-      }
-    </style>
   </head>
 
   <body>
@@ -93,7 +86,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Form Action</h5>
             <a
               type="button"
               class="close"
@@ -212,7 +205,7 @@
           elRow.insertAdjacentHTML(
             "beforeend",
 
-            `<div class="col-8">
+            `<div class="col-md-8 col-sm-12">
           <!-- Thumbnail -->
           <div class="row g-5">
             <img
@@ -229,7 +222,7 @@
         </div>
 
         <!-- Info Card -->
-        <div class="category col-4">
+        <div class="category col-md-4 col-sm-12">
           <div class="joinCard text-content text-center w-100">
             <div class="title p-3">
               <h5><strong>${detail?.title}</strong></h5>
