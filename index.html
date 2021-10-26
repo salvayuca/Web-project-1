@@ -66,11 +66,13 @@
               <a class="nav-link" href="./pages/actions.html">Actions</a>
             </li>
           </ul>
-          <a
-            class="btn btn-outline-success navbar-login"
-            href="./pages/login.html"
-            >Login</a
-            >
+          <div id="div-username">
+            <span id="username"><a
+              class="btn btn-outline-success navbar-login"
+              href="./pages/login.html"
+              >Login</a
+              ></span>
+          </div>
           </div>
         </div>
       </div>
@@ -95,7 +97,7 @@
                 Ayo mulai peduli dengan lingkungan dengan aksi langsung membantu
                 menciptakan tempat yang nyaman untuk kita semua
               </p>
-              <a href="#" class="btn btn-success text-capitalize"
+              <a href="./pages/login.html" class="btn btn-success text-capitalize"
                 >get started</a
               >
             </div>
@@ -188,7 +190,7 @@
               environment. We develop content and experiences to promote
               projects that impact the environmental awareness in Indonesia.
             </p>
-            <a href="#" class="btn btn-success text-capitalize">join action</a>
+            <a href="./pages/actions.html" class="btn btn-success text-capitalize">join action</a>
           </div>
         </div>
       </section>
@@ -296,86 +298,7 @@
           <p class="third">Nantikan program-program menarik yang akan hadir</p>
         </div>
         <!-- Item -->
-        <div class="row row-cols-1 gx-5 mt-md-5">
-          <!-- CS 1 -->
-          <div class="col-md-4 px-5">
-            <div class="card">
-              <img
-                src="https://media.greenpeace.org/GPIDoc/TR4/5/7/0/4/GP0STSKTB.jpg?d63676149710"
-                class="card-img-top rounded-top"
-              />
-              <div class="card-body mx-3 mt-md-2">
-                <h5 class="card-title text-capitalize">Tanam 1000 Pohon</h5>
-                <p class="card-text">Greenpeace Indonesia</p>
-                <div class="schedule">
-                  <div class="time">
-                    <img src="./assets/img/landing-page/hourglass.png" />
-                    <small class="text-muted">15 Desember 2021</small>
-                  </div>
-                </div>
-                <div class="link text-md-end">
-                  <a href="#" class="text-capitalize"
-                    >read more
-                    <span
-                      ><img
-                        src="./assets/img/landing-page/right-arrow.png" /></span
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- CS 2 -->
-          <div class="col-md-4 px-5">
-            <div class="card">
-              <img
-                src="https://bantenhariini.id/wp-content/uploads/2019/12/20191207_134204-768x719.jpg"
-                class="card-img-top"
-              />
-              <div class="card-body mx-3 mt-md-2">
-                <h5 class="card-title text-capitalize">
-                  Festival Peduli Sampah
-                </h5>
-                <p class="card-text">Greenpeace Indonesia</p>
-                <div class="time">
-                  <img src="./assets/img/landing-page/hourglass.png" />
-                  <small class="text-muted">4 Januari 2022</small>
-                </div>
-                <div class="link text-md-end">
-                  <a href="#" class="text-capitalize"
-                    >read more
-                    <span
-                      ><img
-                        src="./assets/img/landing-page/right-arrow.png" /></span
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- CS 3 -->
-          <div class="col-md-4 px-5">
-            <div class="card">
-              <img
-                src="https://www.greenpeace.org/usa/wp-content/uploads/2018/12/Greenpeace-Pandansari-07_GP0STSFJL_Web_size.jpg"
-                class="card-img-top"
-              />
-              <div class="card-body mx-3 mt-md-2">
-                <h5 class="card-title text-capitalize">Beach Clean Up</h5>
-                <p class="card-text">Greenpeace Indonesia</p>
-                <div class="time">
-                  <img src="./assets/img/landing-page/hourglass.png" />
-                  <small class="text-muted">4 Januari 2022</small>
-                </div>
-                <div class="link text-md-end">
-                  <a href="#" class="text-capitalize"
-                    >read more
-                    <span
-                      ><img
-                        src="./assets/img/landing-page/right-arrow.png" /></span
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div id="cardSoon" class="row row-cols-1 gx-5 mt-md-5">
         </div>
       </section>
     </div>
@@ -439,5 +362,56 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+    <script type="module">
+      import data from "./assets/js/soon_data.js";
+     
+      // Username
+      const elUsername = document.querySelector("#username");
+      const username = localStorage.getItem("username");
+
+      if (username) {
+        elUsername.innerHTML = username;
+      }
+
+      data.forEach((detail) => {
+        const elRow = document.getElementById("cardSoon");
+        const details = localStorage.getItem("data_" + detail.id);
+        
+        elRow.insertAdjacentHTML(
+          "beforeend",
+
+          `<div class="col-md-4 px-5">
+            <div class="card">
+              <img
+                src=${detail?.image_url}
+                class="card-img-top"
+              />
+              <div class="card-body mx-3 mt-md-2">
+                <h5 class="card-title text-capitalize">${detail?.title}</h5>
+                <p class="card-text">${detail?.organization}</p>
+                <div class="time">
+                  <img src="./assets/img/landing-page/hourglass.png" />
+                  <small class="text-muted">${detail?.location}</small>
+                </div>
+                <div class="link text-md-end">
+                  <a href="./pages/soon.html" onclick="goDetail(${detail?.id})" class="text-capitalize"
+                    >read more
+                    <span
+                      ><img
+                        src="./assets/img/landing-page/right-arrow.png" /></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>`
+        );
+      });
+    </script>
+     <script>
+      function goDetail(id) {
+        localStorage.setItem("id", id);
+        window.location.href = "./pages/soon.html";
+      }
+    </script>
   </body>
 </html>

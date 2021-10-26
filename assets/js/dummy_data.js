@@ -98,7 +98,7 @@ const data = [
       Bagi kamu yang tertarik dengan program ini Yuk buruan daftar dengan syarat dan ketentuan dibawah ini:
     </p>
     <p>
-      <a>Nama Pekerjaan : Volunteer Young Farmers Club </a> <br />
+      <a>Nama Pekerjaan : Save the Ocean </a> <br />
       <a>Relawan Dibutuhkan : 120 orang </a> <br />
       <a
         >Tugas Relawan : Relawan diharapkan dapat membangun koneksi sekaligus menyelamatkan bumi dengan hal kecil yang dilakukan bersama-sama.</a

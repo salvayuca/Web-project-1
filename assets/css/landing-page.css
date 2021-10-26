@@ -61,6 +61,7 @@ nav {
   color: #342b2b !important;
 }
 .navbar-login {
+  text-decoration: none;
   margin-left: 16px;
   color: #56854e !important;
   border-color: #56854e;
