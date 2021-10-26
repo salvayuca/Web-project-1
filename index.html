@@ -52,9 +52,7 @@
         >
           <ul class="navbar-nav container-fluid justify-content-end">
             <li class="nav-item">
-              <a 
-                class="nav-link active"
-                aria-current="page" href="#home"
+              <a class="nav-link active" aria-current="page" href="#home"
                 >Home</a
               >
             </li>
@@ -69,11 +67,13 @@
             </li>
           </ul>
           <div id="div-username">
-            <span id="username" class="btn btn-outline-success navbar-login"><a
-              href="./pages/login.html"
-              >Login</a
-              ></span>
-          </div>
+            <span id="username"
+              ><a
+                class="btn btn-outline-success navbar-login"
+                href="./pages/login.html"
+                >Login</a
+              ></span
+            >
           </div>
         </div>
       </div>
@@ -98,7 +98,9 @@
                 Ayo mulai peduli dengan lingkungan dengan aksi langsung membantu
                 menciptakan tempat yang nyaman untuk kita semua
               </p>
-              <a href="./pages/login.html" class="btn btn-success text-capitalize"
+              <a
+                href="./pages/login.html"
+                class="btn btn-success text-capitalize"
                 >get started</a
               >
             </div>
@@ -191,7 +193,11 @@
               environment. We develop content and experiences to promote
               projects that impact the environmental awareness in Indonesia.
             </p>
-            <a href="./pages/actions.html" class="btn btn-success text-capitalize">join action</a>
+            <a
+              href="./pages/actions.html"
+              class="btn btn-success text-capitalize"
+              >join action</a
+            >
           </div>
         </div>
       </section>
@@ -299,8 +305,7 @@
           <p class="third">Nantikan program-program menarik yang akan hadir</p>
         </div>
         <!-- Item -->
-        <div id="cardSoon" class="row row-cols-1 gx-5 mt-md-5">
-        </div>
+        <div id="cardSoon" class="row row-cols-1 gx-5 mt-md-5"></div>
       </section>
     </div>
 
@@ -365,7 +370,7 @@
     ></script>
     <script type="module">
       import data from "./assets/js/soon_data.js";
-     
+
       // Username
       const elUsername = document.querySelector("#username");
       const username = localStorage.getItem("username");
@@ -377,7 +382,7 @@
       data.forEach((detail) => {
         const elRow = document.getElementById("cardSoon");
         const details = localStorage.getItem("data_" + detail.id);
-        
+
         elRow.insertAdjacentHTML(
           "beforeend",
 
@@ -408,7 +413,7 @@
         );
       });
     </script>
-     <script>
+    <script>
       function goDetail(id) {
         localStorage.setItem("id", id);
         window.location.href = "./pages/soon.html";

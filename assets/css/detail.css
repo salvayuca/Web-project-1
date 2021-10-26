@@ -68,22 +68,16 @@ nav {
 .nav-item > a {
   color: #342b2b !important;
 }
-.navbar-login {
-  margin-left: 16px;
-  border-color: #56854e;
-  border-radius: 10px;
-  font-weight: 500;
-  font-family: "Rubik", sans-serif;
-  color: #56854e !important;
-}
 .navbar-login,
-#div-username :hover {
+#username {
+  margin-left: 16px;
+  border-radius: 10px;
   border-color: #56854e;
-  color: #ffffff !important;
+  font-weight: 500;
+  color: #56854e;
 }
-#username > a {
-  text-decoration: none;
-  color: #56854e !important;
+#div-username {
+  cursor: default;
 }
 
 /* Button */
@@ -102,6 +96,7 @@ nav {
 .btn:hover,
 .btn:active,
 .btn:focus {
+  border-color: #56854e;
   background-color: #406139 !important;
   box-shadow: none !important;
 }
@@ -222,9 +217,17 @@ nav {
   .nav-item {
     padding-top: 5px;
   }
+  .navbar-login,
+  #div-username {
+    display: flex;
+    justify-content: center;
+    margin-left: -15px;
+  }
   .navbar-login {
     margin-top: 15px;
-    margin-right: 35px;
+  }
+  .navbar-nav {
+    margin-bottom: 10px;
   }
 
   /* Content */

@@ -43,33 +43,32 @@ const data = [
   },
   {
     id: 2,
-    title: "Festival Peduli Sampah",
-    organization: "Mini Kutu Indonesia",
+    title: "Festival Peduli Sampah Nasional 2021",
+    organization: "Kementrian Lingkungan Hidup dan Kehutanan",
     schedule: "4 Januari 2022",
     image_url:
       "https://bantenhariini.id/wp-content/uploads/2019/12/20191207_134204-768x719.jpg",
-    location: "Teras Cikapundung BBWS, Bandung",
-    loc_url: "https://goo.gl/maps/qXQwVqTdcHKwHopA8",
+    location: "Jl. Cisitu Indah VI, Dago",
+    loc_url: "https://goo.gl/maps/hrRnvtE4DbtZWeKHA",
     tanggal: "Akan Hadir 1 bulan lagi",
     decs: `            <h3>Description</h3>
     <p>[CALL FOR VOLUNTEER]</p>
     <p>
-      Young Farmers Club merupakan project terbaru Mini Kutu yang mengajak milenial untuk mengisi waktu luang dengan bercocok tanam. Selain itu, sesam volunteer bisa berdiskusi seputar dunia pertanian.
+    Kementrian Lingkungan Hidup dan Kehutanan (KLHK) meluncurkan Festival Peduli Sampah Nasional 2021. Acara yang berlangsung Senin (3/5) dan diselenggarakan secara virtual itu diharapkan bisa meningkatkan kesadaran dan memberi edukasi terkait pengelolaan sampah.
     </p>
     <p>
       Bagi kamu yang tertarik dengan program ini Yuk buruan daftar dengan syarat dan ketentuan dibawah ini:
     </p>
     <p>
-      <a>Nama Pekerjaan : Volunteer Young Farmers Club </a> <br />
-      <a>Relawan Dibutuhkan : 40 orang </a> <br />
+      <a>Nama Pekerjaan : Volunteer Festival Peduli Sampah</a> <br />
+      <a>Relawan Dibutuhkan : 200 orang </a> <br />
       <a
-        >Tugas Relawan : Relawan diharapkan dapat membangun koneksi sekaligus menyelamatkan bumi dengan hal kecil yang dilakukan bersama-sama.</a
+        >Tujuan Festival: Memberikan gambaran tentang proses hilir pengolahan sampah seperti memberikan contoh tempat pembuangan akhir (TPA) yang baik dan menggunakan teknologi untuk mengolah sampah menjadi energi</a
       >
     </p>
     <a>Kriteria Relawan</a>
     <ol type="1">
       <li>Warga Negara Indonesia (WNI) di seluruh wilayah</li>
-      <li>Memiliki akun instagram pribadi</li>
       <li>Bekomitmen dan berdedikasi</li>
       <li>Mengisi formulir pendaftaran di link yang sudah disediakan</li>
     </ol>`,
