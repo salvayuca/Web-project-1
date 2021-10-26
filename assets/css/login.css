@@ -62,7 +62,7 @@ nav {
   border-radius: 15px;
 }
 
-.image {
+.thumbnail {
   border-radius: 15px;
   height: 80%;
 }
@@ -90,4 +90,38 @@ nav {
 .footer p {
   font-size: 12px;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  /* .navbar-brand {
+    display:flex;
+    align-items: center !important;
+  } */
+
+  /* Content */
+  .card {
+    position: relative;
+    display:flex;
+    justify-content: center;
+  }
+  .thumbnail {
+    display: none;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: -1px;
+  }
+  .footer .logo {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .footer #about-us {
+    text-align: center;
+  }
+
+  .icons > img {
+    width: 25px;
+    margin: 3px 12px 0px;
+  }
 }

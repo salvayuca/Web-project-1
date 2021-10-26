@@ -205,3 +205,34 @@ nav {
   font-size: 12px;
   font-weight: 500;
 }
+
+@media only screen and (max-width: 768px) {
+  /* Content */
+  .image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .category {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: -1px;
+  }
+  .footer .logo {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .footer #about-us {
+    text-align: center;
+  }
+
+  .icons > img {
+    width: 25px;
+    margin: 3px 12px 0px;
+  }
+}
