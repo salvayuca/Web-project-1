@@ -5,7 +5,7 @@ const data = [
     organization: "Greenpeace Indonesia",
     schedule: "Rabu, 15 Desember 2021",
     image_url:
-      "https://static.gatra.com/foldershared/images/2019/fatikhin/07-Jul/shutterstock_penanaman_pohon.jpg",
+      "https://media.greenpeace.org/GPIDoc/TR4/5/7/0/4/GP0STSKTB.jpg?d63676149710",
     location: "Taman Kota Jakarta, Jakarta Pusat",
     loc_url: "https://goo.gl/maps/CwCVZ9Yc7S6Y7aq79",
     tanggal: "Akan Hadir 3 minggu lagi",
@@ -43,8 +43,8 @@ const data = [
   },
   {
     id: 2,
-    title: "Festival Peduli Sampah Nasional 2021",
-    organization: "Kementrian Lingkungan Hidup dan Kehutanan",
+    title: "Festival Peduli Sampah",
+    organization: "KLHK",
     schedule: "4 Januari 2022",
     image_url:
       "https://bantenhariini.id/wp-content/uploads/2019/12/20191207_134204-768x719.jpg",
