@@ -93,17 +93,13 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
-  /* .navbar-brand {
-    display:flex;
-    align-items: center !important;
-  } */
-
   /* Content */
   .card {
     position: relative;
-    display:flex;
+    display: flex;
     justify-content: center;
   }
+
   .thumbnail {
     display: none;
   }

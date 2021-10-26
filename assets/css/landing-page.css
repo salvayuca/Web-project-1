@@ -61,17 +61,21 @@ nav {
   color: #342b2b !important;
 }
 .navbar-login {
-  text-decoration: none;
   margin-left: 16px;
-  color: #56854e !important;
   border-color: #56854e;
   border-radius: 10px;
   font-weight: 500;
   font-family: "Rubik", sans-serif;
+  color: #56854e !important;
 }
-.navbar-login:hover {
+.navbar-login,
+#div-username :hover {
   border-color: #56854e;
   color: #ffffff !important;
+}
+#username > a {
+  text-decoration: none;
+  color: #56854e !important;
 }
 
 /* Jumbotron */
@@ -278,7 +282,7 @@ section {
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  /* navbar */
+  /* Navbar */
   .text-content {
     text-align: center;
   }
@@ -289,10 +293,8 @@ section {
     padding-top: 5px;
   }
   .navbar-login {
-    margin-top: 10px;
-    padding: 3px;
-    margin-left: -18px;
-    width: 100px;
+    margin-top: 15px;
+    margin-right: 35px;
   }
 
   /* Jumbotron */

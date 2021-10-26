@@ -70,8 +70,10 @@
               >
             </li>
           </ul>
-          <div id="div-username" class="btn btn-outline-success navbar-login">
-            <span id="username">Login</span>
+          <div id="div-username">
+            <span id="username" class="btn btn-outline-success navbar-login"
+              ><a href="../pages/login.html">Login</a></span
+            >
           </div>
         </div>
       </div>
@@ -155,7 +157,7 @@
           elRow.insertAdjacentHTML(
             "beforeend",
 
-            `<div class="col-8">
+            `<div class="col-md-8">
           <!-- Thumbnail -->
           <div class="row g-5">
             <img
@@ -172,7 +174,7 @@
         </div>
 
         <!-- Info Card -->
-        <div class="category col-4">
+        <div class="category col-md-4">
           <div class="joinCard text-content text-center w-100">
             <div class="title p-3">
               <h5><strong>${detail?.title}</strong></h5>

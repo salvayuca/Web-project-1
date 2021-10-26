@@ -62,15 +62,20 @@ nav {
 }
 .navbar-login {
   margin-left: 16px;
-  color: #56854e !important;
   border-color: #56854e;
   border-radius: 10px;
   font-weight: 500;
   font-family: "Rubik", sans-serif;
+  color: #56854e !important;
 }
-.navbar-login:hover {
+.navbar-login,
+#div-username :hover {
   border-color: #56854e;
   color: #ffffff !important;
+}
+#username > a {
+  text-decoration: none;
+  color: #56854e !important;
 }
 
 /* Button */
@@ -208,4 +213,38 @@ nav {
 .footer p {
   font-size: 12px;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  /* Navbar */
+  .text-content {
+    text-align: center;
+  }
+  .nav-link.active::after {
+    display: none;
+  }
+  .nav-item {
+    padding-top: 5px;
+  }
+  .navbar-login {
+    margin-top: 15px;
+    margin-right: 35px;
+  }
+  /* Footer */
+  .footer {
+    margin-top: -1px;
+  }
+  .footer .logo {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .footer #about-us {
+    text-align: center;
+  }
+
+  .icons > img {
+    width: 25px;
+    margin: 3px 12px 0px;
+  }
 }
