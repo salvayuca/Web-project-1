@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  min-height: 100vh;
+  background-color: #f7f6f2;
+}
+
+/* Font Type */
+.text-content {
+  font-family: "Nunito", sans-serif;
+}
+.text-tittle {
+  font-family: "Rubik", sans-serif;
+}
+
+/* Navbar */
+nav {
+  font-family: "Rubik", sans-serif !important;
+}
+.navbar {
+  padding: 10px 0px;
+}
+.nav-link.active {
+  position: relative;
+}
+.nav-link.active::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #56854e;
+}
+.navbar-brand {
+  font-weight: 700;
+}
+.logo a > img {
+  width: 2rem;
+  margin-right: 15px;
+}
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 500;
+}
+.nav-item {
+  margin-right: 20px;
+  margin-left: 20px;
+  position: relative;
+}
+.nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: #56854e;
+  transition: width 0.3s ease-out;
+}
+.nav-item:hover.nav-item::after {
+  width: 100%;
+}
+.nav-item > a {
+  color: #342b2b !important;
+}
+.navbar-login,
+#username {
+  margin-left: 16px;
+  border-radius: 10px;
+  border-color: #56854e;
+  font-weight: 500;
+  color: #56854e;
+}
+#div-username {
+  cursor: default;
+}
+
+/* Button */
+.btn {
+  font-family: "Rubik", sans-serif;
+}
+.btn-success {
+  background-color: #56854e;
+  border-radius: 8px;
+  padding: 7px 25px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  border-color: #56854e;
+  background-color: #406139 !important;
+  box-shadow: none !important;
+}
+
+.btnCancel {
+  background-color: #6e6e6e !important;
+  border-color: #6e6e6e !important;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btnCancel {
+  padding: 7px 25px;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+.btnCancel:hover,
+.btnCancel:active,
+.btnCancel:focus {
+  background-color: #414141 !important;
+  border-color: #414141 !important;
+  box-shadow: none !important;
+}
+
+.close span {
+  color: white;
+}
+
+.modal-header a {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Thumbnail */
+.image {
+  height: 350px;
+  border-radius: 5%;
+  object-fit: cover;
+}
+
+/* Detail Card */
+.joinCard {
+  box-shadow: 15px;
+}
+.title {
+  background-color: #5a8653;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+}
+.title > h6 {
+  margin: 0 !important;
+}
+.body {
+  background-color: #f3efdd;
+  border-radius: 0px 0px 10px 10px;
+}
+.joinTime {
+  margin: 5px;
+}
+.lokasi > img {
+  width: 20px;
+  margin-right: 5px;
+}
+.lokasi > a {
+  text-decoration: none;
+  color: #342b2b;
+}
+
+/* From Modal */
+.modal-content {
+  background-color: rgb(233, 235, 218);
+}
+.modal-header {
+  background-color: #5a8653 !important;
+}
+.modal-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+/* Footer */
+.last {
+  padding: 0px;
+}
+.footer {
+  margin-top: -100px;
+  background-color: #5a8653;
+  color: #241c1c !important;
+  font-family: "Rubik", sans-serif;
+}
+.footer a {
+  color: #241c1c !important;
+}
+.footer hr {
+  border: 1px solid black !important;
+}
+.icons > img {
+  width: 8%;
+  margin: 3px 12px 0px;
+}
+.footer p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Navbar */
+  .text-content {
+    text-align: center;
+  }
+  .nav-link.active::after {
+    display: none;
+  }
+  .nav-item {
+    padding-top: 5px;
+  }
+  .navbar-login,
+  #div-username {
+    display: flex;
+    justify-content: center;
+    margin-left: -15px;
+  }
+  .navbar-login {
+    margin-top: 15px;
+  }
+  .navbar-nav {
+    margin-bottom: 10px;
+  }
+
+  /* Content */
+  .image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .category {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: -1px;
+  }
+  .footer .logo {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .footer #about-us {
+    text-align: center;
+  }
+
+  .icons > img {
+    width: 25px;
+    margin: 3px 12px 0px;
+  }
+}

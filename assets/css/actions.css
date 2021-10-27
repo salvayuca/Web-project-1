@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  min-height: 100vh;
+  background-color: #f7f6f2;
+}
+
+/* Navbar */
+nav {
+  font-family: "Rubik", sans-serif !important;
+}
+.navbar {
+  padding: 10px 0px;
+}
+.nav-link.active {
+  position: relative;
+}
+.nav-link.active::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #56854e;
+}
+.navbar-brand {
+  font-weight: 700;
+}
+.logo a > img {
+  width: 2rem;
+  margin-right: 15px;
+}
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 500;
+}
+.nav-item {
+  margin-right: 20px;
+  margin-left: 20px;
+  position: relative;
+}
+.nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: #56854e;
+  transition: width 0.3s ease-out;
+}
+.nav-item:hover.nav-item::after {
+  width: 100%;
+}
+.nav-item > a {
+  color: #342b2b !important;
+}
+.navbar-login,
+#username {
+  margin-left: 16px;
+  border-radius: 10px;
+  border-color: #56854e;
+  font-weight: 500;
+  color: #56854e;
+}
+#div-username {
+  cursor: default;
+}
+
+/* Button */
+.btn-success,
+.btn-success.disabled {
+  background-color: #56854e;
+  border-color: #56854e;
+  border-radius: 8px;
+  padding: 7px 25px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #406139 !important;
+  box-shadow: none !important;
+}
+
+.btn-success.disabled {
+  opacity: 0.5;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Title */
+.title {
+  margin: 30px 0px;
+}
+
+.title h5 {
+  margin-top: 15px;
+}
+
+/* paralax */
+.paralax {
+  margin: 0;
+  padding: 0;
+}
+#box1 {
+  height: 60vh;
+  width: 100%;
+  background-image: url(../img/actions/gambar1.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-attachment: fixed;
+}
+
+.paralax h1 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  letter-spacing: 20px;
+  text-shadow: 5px 5px 5px #5c5757;
+  font-size: 50px;
+  color: #f7f6f2;
+  margin: 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+.paralax p {
+  font-family: "Nunito", sans-serif;
+  text-shadow: 5px 5px 5px #2c2b2b;
+  padding-top: 30px;
+  letter-spacing: 5px;
+  font-size: 20px;
+  color: #f7f6f2;
+  margin: 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+/* Header */
+.header {
+  background-color: #ebf1fa;
+}
+
+/* Card */
+.card {
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.card-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.card-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 13px;
+  margin: -2px 0px 10px;
+}
+.button {
+  margin: 20px 0px 5px;
+}
+.time {
+  margin-bottom: 10px;
+}
+.card-img-top {
+  height: 30vh;
+  object-fit: cover;
+}
+.time > img {
+  width: 18px;
+}
+.time small {
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+}
+span img {
+  margin-top: -2px;
+  width: 18px;
+  margin-left: 5px;
+}
+a {
+  text-decoration: none;
+  color: #342b2b;
+  font-size: 15px;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Footer */
+.last {
+  padding: 0px;
+}
+.footer {
+  margin-top: -71px;
+  background-color: #5a8653;
+  color: #241c1c !important;
+  font-family: "Rubik", sans-serif;
+}
+.footer a {
+  color: #241c1c !important;
+}
+.footer hr {
+  border: 1px solid black !important;
+}
+.icons > img {
+  width: 8%;
+  margin: 3px 12px 0px;
+}
+.footer p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  /* Navbar */
+  .text-content {
+    text-align: center;
+  }
+  .nav-link.active::after {
+    display: none;
+  }
+  .nav-item {
+    padding-top: 5px;
+  }
+  .navbar-login,
+  #div-username {
+    display: flex;
+    justify-content: center;
+    margin-left: -15px;
+  }
+  .navbar-login {
+    margin-top: 15px;
+  }
+  .navbar-nav {
+    margin-bottom: 10px;
+  }
+  /* Footer */
+  .footer {
+    margin-top: -1px;
+  }
+  .footer .logo {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .footer #about-us {
+    text-align: center;
+  }
+
+  .icons > img {
+    width: 25px;
+    margin: 3px 12px 0px;
+  }
+}

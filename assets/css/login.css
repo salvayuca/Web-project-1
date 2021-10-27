@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  min-height: 100vh;
+  background-color: #f7f6f2;
+}
+
+/* Font Type */
+.text-content {
+  color: #342b2b;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+.card-header {
+  background-color: #56854e;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  padding-top: 20px;
+}
+.mb-3 small {
+  color: #578144;
+}
+
+/* Navbar */
+nav {
+  font-family: "Rubik", sans-serif !important;
+}
+.navbar {
+  padding: 10px 0px;
+}
+.navbar-brand {
+  font-weight: 700;
+}
+.logo a > img {
+  width: 2rem;
+  margin-right: 15px;
+}
+.header {
+  padding-top: 100px;
+}
+
+/* Button */
+.btn-success {
+  background-color: #56854e;
+  border-radius: 8px;
+  padding: 7px 25px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #406139 !important;
+  box-shadow: none !important;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.thumbnail {
+  border-radius: 15px;
+  height: 80%;
+}
+
+/* Footer */
+.last {
+  padding: 0px;
+}
+.footer {
+  margin-top: -100px;
+  background-color: #5a8653;
+  color: #241c1c !important;
+  font-family: "Rubik", sans-serif;
+}
+.footer a {
+  color: #241c1c !important;
+}
+.footer hr {
+  border: 1px solid black !important;
+}
+.icons > img {
+  width: 8%;
+  margin: 3px 12px 0px;
+}
+.footer p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Content */
+  .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .thumbnail {
+    display: none;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: -1px;
+  }
+  .footer .logo {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .footer #about-us {
+    text-align: center;
+  }
+
+  .icons > img {
+    width: 25px;
+    margin: 3px 12px 0px;
+  }
+}
